@@ -1,0 +1,26 @@
+{
+  "name": "bf-wiki-fr",
+  "version": "0.0.0",
+  "description": "Assets for the french BF RPG wiki",
+  "url": "http://fr.bravefrontierrpg.wikia.com",
+  "scripts": {
+    "build:css": "node-sass -r assets/scss -o dist/css",
+    "clean": "rimraf dist",
+    "minify:css": "minify --template '{{filename}}.min.css' dist/css/*.css",
+    "package:css": "minify --output 'dist/css/all.min.css' dist/css/*.min.css",
+    "upload:css": "node tasks/bot.js",
+    "watch:css": "nodemon -e scss -x 'npm run clean && npm run build:css && npm run minify:css && npm run package:css && npm run upload:css'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matxx/bf-wiki-fr"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "minifier": "^0.8.1",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
+    "nodemw": "^0.10.1",
+    "rimraf": "^2.6.1"
+  }
+}

@@ -1,0 +1,76 @@
+$fire-border:    #FE2E2E;
+$fire-bg-strong: #F6CECE;
+$fire-bg-middle: #FFE3E3;
+$fire-bg-light:  #FBEFEF;
+
+$water-border:    #2E2EFE;
+$water-bg-strong: #A9D0F5;
+$water-bg-middle: #D3F3FF;
+$water-bg-light:  #EFFBFB;
+
+$earth-border:    #04B404;
+$earth-bg-strong: #A9F5A9;
+$earth-bg-middle: #E3FFE3;
+$earth-bg-light:  #EEFBEF;
+
+$thunder-border:    #D7DF01;
+$thunder-bg-strong: #F3F781;
+$thunder-bg-middle: #FFFFB3;
+$thunder-bg-light:  #FBFBEF;
+
+$light-border:    #A4A4A4;
+$light-bg-strong: #F2F2F2;
+$light-bg-middle: #F8F8F8;
+$light-bg-light:  #FFFFFF;
+
+$dark-border:    #6A0888;
+$dark-bg-strong: #D0A9F5;
+$dark-bg-middle: #E5CCFF;
+$dark-bg-light:  #F8EFFB;
+
+$default-border:    #000000;
+$default-bg-strong: #DDDDDD;
+$default-bg-light:  #FAFAFA;
+
+.portable-infobox {
+  padding: 2px;
+  border-radius: 4px;
+  background-color: white;
+  margin-right: 5px;
+}
+
+.portable-infobox.pi-theme-fire    { box-shadow: 0 0 5px $fire-border;    background-color: $fire-bg-light;    }
+.portable-infobox.pi-theme-water   { box-shadow: 0 0 5px $water-border;   background-color: $water-bg-light;   }
+.portable-infobox.pi-theme-earth   { box-shadow: 0 0 5px $earth-border;   background-color: $earth-bg-light;   }
+.portable-infobox.pi-theme-thunder { box-shadow: 0 0 5px $thunder-border; background-color: $thunder-bg-light; }
+.portable-infobox.pi-theme-light   { box-shadow: 0 0 5px $light-border;   background-color: $light-bg-light;   }
+.portable-infobox.pi-theme-dark    { box-shadow: 0 0 5px $dark-border;    background-color: $dark-bg-light;    }
+
+.portable-infobox .pi-title, .portable-infobox .pi-header { text-shadow: 0 0 4px gray; }
+
+.pi-theme-fire    .pi-title, .pi-theme-fire    .pi-header { background-color: $fire-bg-strong;    }
+.pi-theme-water   .pi-title, .pi-theme-water   .pi-header { background-color: $water-bg-strong;   }
+.pi-theme-earth   .pi-title, .pi-theme-earth   .pi-header { background-color: $earth-bg-strong;   }
+.pi-theme-thunder .pi-title, .pi-theme-thunder .pi-header { background-color: $thunder-bg-strong; }
+.pi-theme-light   .pi-title, .pi-theme-light   .pi-header { background-color: $light-bg-strong;   }
+.pi-theme-dark    .pi-title, .pi-theme-dark    .pi-header { background-color: $dark-bg-strong;    }
+
+.pi-theme-fire    .pi-horizontal-group-item:nth-child(2n) { background-color: $fire-bg-middle;    }
+.pi-theme-water   .pi-horizontal-group-item:nth-child(2n) { background-color: $water-bg-middle;   }
+.pi-theme-earth   .pi-horizontal-group-item:nth-child(2n) { background-color: $earth-bg-middle;   }
+.pi-theme-thunder .pi-horizontal-group-item:nth-child(2n) { background-color: $thunder-bg-middle; }
+.pi-theme-light   .pi-horizontal-group-item:nth-child(2n) { background-color: $light-bg-middle;   }
+.pi-theme-dark    .pi-horizontal-group-item:nth-child(2n) { background-color: $dark-bg-middle;    }
+
+
+.infobox-item-craft-facility-lvl {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 0 3px #000, 0 0 3px #000, 0 0 3px #000;
+  font-size: 20px;
+}
+
