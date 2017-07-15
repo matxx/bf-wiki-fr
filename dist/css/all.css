@@ -1292,8 +1292,6 @@ a[href$="/wiki/Spécial:Contributions/AlphaMoon"] {
 
 .item-page .portable-infobox {
   width: 400px !important; }
-  .item-page .portable-infobox .pi-image {
-    display: none; }
 
 .list-with-icons li {
   position: relative; }
