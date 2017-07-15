@@ -5,6 +5,7 @@ const rename = require('gulp-rename')
 const sass = require('gulp-sass');
 const minifyCSS = require('gulp-minify-css');
 const path = require('path')
+const gulpGitStatus = require('gulp-git-status');
 
 gulp.task('clean', function() {
   return del(['dist'])
@@ -17,6 +18,12 @@ gulp.task('build:css', function() {
   gulp.src('assets/scss/**/*.scss')
       .pipe(sass().on('error', sass.logError))
       .pipe(concat('all.css'))
+      .pipe(gulp.dest('dist/css'))
+  gulp.src('assets/scss/**/*.scss')
+      .pipe(gulpGitStatus({ excludeStatus: 'unchanged' }))
+      .pipe(gulpGitStatus({ excludeStatus: 'untracked' }))
+      .pipe(sass().on('error', sass.logError))
+      .pipe(concat('changed.css'))
       .pipe(gulp.dest('dist/css'))
 })
 
@@ -48,7 +55,7 @@ gulp.task('upload:css', function() {
     path: '',
     debug: true
   })
-  const cssPath = path.join(__dirname, 'dist', 'css', 'all.min.css')
+  const cssPath = path.join(__dirname, 'dist', 'css', 'changed.min.css')
 
   bot.logIn(process.env.WIKI_BOT_USERNAME, process.env.WIKI_BOT_PASSWORD, logAndExecute(readFile))
 
@@ -57,7 +64,7 @@ gulp.task('upload:css', function() {
   }
 
   function uploadCss(css) {
-    bot.edit('MediaWiki:Test.css', css, 'update CSS', '1', function (err, data) {
+    bot.edit('MediaWiki:Dev.css', css, 'update CSS', '1', function (err, data) {
       if (err) {
         console.log(err)
       }
