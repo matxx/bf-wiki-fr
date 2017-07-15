@@ -1,0 +1,123 @@
+$icon-size: 20px;
+
+.list-with-icons li {
+  position: relative;
+}
+@media only screen and (max-width: 1595px) {
+  .list-with-icons li::before {
+  }
+}
+.list-with-icons li:before {
+  position: absolute;
+  top: 4px;
+  left: -25px;
+  width: $icon-size;
+  height: $icon-size;
+  content: '';
+}
+.list-with-icons li.no-list-style {
+  list-style: none;
+}
+.list-with-icons li.no-list-style:before {
+  background-image: url("//vignette2.wikia.nocookie.net/bravefrontierrpg/images/d/d0/Battle_buff_icon.png/revision/latest?cb=20170713013803&path-prefix=fr");
+  background-size: 1500% 1300%;
+  background-repeat: no-repeat;
+}
+.list-with-icons.list-without-text {
+  display: inline;
+  float: right;
+  margin: 0;
+}
+.list-with-icons.list-without-text li {
+  list-style: none;
+  display: inline;
+  padding: 0px 10px;
+  margin-right: 5px;
+}
+.list-with-icons.list-without-text li:before {
+  left: 0px;
+  top: -2px;
+}
+
+@mixin icon-pos($row, $col) {
+  background-position: (-(($col - 1) * $icon-size)) (-(($row - 1) * $icon-size));
+}
+@mixin battle_bad_icon() {
+  background-image: url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/6/6e/Battle_bad_icon.png/revision/latest?cb=20170713013337&path-prefix=fr");
+  background-size: 600% 100%;
+}
+@mixin battle_buff_icon_eu() {
+  background-image: url("//vignette1.wikia.nocookie.net/bravefrontierrpg/images/3/3d/Battle_buff_icon_eu.png/revision/latest?cb=20170713013422&path-prefix=fr");
+  background-size: 1500% 600%;
+}
+@mixin battle_buff_icon_sg() {
+  background-image: url("//vignette1.wikia.nocookie.net/bravefrontierrpg/images/4/41/Battle_buff_icon_sg.png/revision/latest?cb=20170713013450&path-prefix=fr");
+  background-size: 1500% 600%;
+}
+
+// Icon toggling unit thum/full on unit page
+.list-with-icons li.swords::before {
+  background-image: url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/0/05/Film.png/revision/latest?cb=20141002102919&path-prefix=fr");
+  background-size: 100% 100%;
+}
+// BB targeting icons
+.list-with-icons li.multi::before {
+  background-image: url("//vignette2.wikia.nocookie.net/bravefrontierrpg/images/f/fc/Icone_multi.png/revision/latest/scale-to-width-down/17?cb=20150504233341&path-prefix=fr");
+  background-size: 100% 100%;
+}
+.list-with-icons li.single::before {
+  background-image: url("//vignette1.wikia.nocookie.net/bravefrontierrpg/images/6/6e/Icone_mono.png/revision/latest/scale-to-width-down/17?cb=20150504233329&path-prefix=fr");
+  background-size: 100% 100%;
+}
+.list-with-icons li.random::before {
+  background-image: url("//vignette4.wikia.nocookie.net/bravefrontierrpg/images/b/b5/Icone_al%C3%A9atoire.png/revision/latest/scale-to-width-down/17?cb=20150531212402&path-prefix=fr");
+  background-size: 100% 100%;
+}
+
+$battle_buff_icons: (
+  (atk-up,                atk-down,             def-up,                   def-down,         rec-up,                 rec-down,                 crit-up,                  regen,                  drop-hc-up,             drop-bc-up,                 drop-items-up,            angel-idol,               atk-up-fire,            def-up-fire,              rec-up-fire               ),
+  (atk-up-water,          def-up-water,         rec-up-water,             atk-up-earth,     def-up-earth,           rec-up-earth,             atk-up-thunder,           def-up-thunder,         rec-up-thunder,         atk-up-light,               def-up-light,             rec-up-light,             atk-up-dark,            def-up-dark,              rec-up-dark               ),
+  (atk-down-fire,         def-down-fire,        rec-down-fire,            atk-down-water,   def-down-water,         rec-down-water,           atk-down-earth,           def-down-earth,         rec-down-earth,         atk-down-thunder,           def-down-thunder,         rec-down-thunder,         atk-down-light,         def-down-light,           rec-down-light            ),
+  (atk-down-dark,         def-down-dark,        rec-down-dark,            resist-fire,      resist-water,           resist-earth,             resist-thunder,           resist-light,           resist-dark,            ailments-resist-poison,     ailments-resist-weakness, ailments-resist-sickness, ailments-resist-injury, ailments-resist-curse,    ailments-resist-paralysis ),
+  (bb-fill,               bb-fill-dmg,          target-on,                target-off,       ignore-def,             double-atk,               hits-up,                  element-fire,           element-water,          element-earth,              element-thunder,          element-light,            element-dark,           resist,                   spark-dmg-up              ),
+  (spark-drop-hc,         spark-drop-bc,        spark-drop-items,         cancel-ls,        null,                   null,                     null,                     null,                   null,                   atk-down-lock,              def-down-lock,            rec-down-lock,            ailments-apply-poison,  ailments-apply-weakness,  ailments-apply-sickness   ),
+  (ailments-apply-injury, ailments-apply-curse, ailments-apply-paralysis, spark-up-up,      od,                     dot,                      bb-dmg-up,                return-dmg,             apply-atk-down,         apply-def-down,             apply-rec-down,           bb-gauge-up,              crit-dmg-up,            weakness-fire,            weakness-water            ),
+  (weakness-earth,        weakness-thunder,     weakness-light,           weakness-dark,    ailments-return-poison, ailments-return-weakness, ailments-return-sickness, ailments-return-injury, ailments-return-curse,  ailments-return-paralysis,  angel-idol-proc,          drop-hc-down,             drop-bc-down,           spark-weakness,           bb-dmg-down               ),
+  (shield-fire,           shield-water,         shield-earth,             shield-thunder,   shield-light,           shield-dark,              ailments-atk-up,          spark-bb-fill,          guard-1,                guard-2,                    guard-3,                  bb-gauge-down,            spark-atk-up,           spark-def-up,             spark-rec-up              ),
+  (spark-crit-up,         resist-atk-down,      resist-def-down,          resist-rec-down,  self-atk-up,            self-def-up,              self-rec-up,              spark-crit,             od-gauge-up,            regen-dmg,                  drain-hp,                 spark-regen,              convert-atk,            convert-def,              convert-rec               ),
+  (self-crit,             self-spark,           self-regen,               self-bb,          self-convert-atk,       self-convert-def,         self-convert-rec,         reduc-crit,             reduc-weak,             reduc-spark,                normal-atk-aoe,           cancel-sphere,            cancel-es),
+  (resist-dot),
+);
+
+@for $i from 1 through length($battle_buff_icons) {
+  $row: nth($battle_buff_icons, $i);
+  @for $j from 1 through length($row) {
+    $col: nth($row, $j);
+    @if $col {
+      .list-with-icons li.#{$col}::before { @include icon-pos($i, $j); }
+    }
+  }
+}
+
+$battle_bad_icons: (ailments-poison, ailments-weakness, ailments-sickness, ailments-injury, ailments-curse, ailments-paralysis);
+
+@for $i from 1 through length($battle_bad_icons) {
+  $col: nth($battle_bad_icons, $i);
+  .list-with-icons li.#{$col}::before { @include battle_bad_icon(); @include icon-pos($i, 1); }
+}
+
+$battle_buff_icons_eu: (eu-double-atk, eu-double-bb, eu-shield-rec);
+
+@for $i from 1 through length($battle_buff_icons_eu) {
+  $col: nth($battle_buff_icons_eu, $i);
+  .list-with-icons li.#{$col}::before { @include battle_buff_icon_eu(); @include icon-pos($i, 1); }
+}
+
+// $battle_buff_icons_sg: ();
+//
+// @for $i from 1 through length($battle_buff_icons_sg) {
+//   $col: nth($battle_buff_icons_sg, $i);
+//   .list-with-icons li.#{$col}::before { @include battle_buff_icon_sg(); @include icon-pos($i, 1); }
+// }
+
+.list-with-icons li.sg-stealth::before { @include battle_buff_icon_sg(); background-position: -260px 0; }

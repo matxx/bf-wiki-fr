@@ -1,0 +1,13 @@
+.advanced-tooltip .tooltip-contents {
+  display: none; }
+
+.wds-avatar-stack {
+  z-index: 0; }
+
+.tt-basic-tooltip {
+  border: 1px solid #cac4b5;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  margin-bottom: 5px;
+  padding: 2px 5px;
+  background-color: #fbeecb; }
