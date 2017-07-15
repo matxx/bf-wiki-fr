@@ -7,6 +7,19 @@ const minifyCSS = require('gulp-minify-css');
 const path = require('path')
 const gulpGitStatus = require('gulp-git-status');
 
+const header_start = '/*****************************************************************/\n' +
+                     '/*                   all CSS is managed via SCSS                 */\n' +
+                     '/*    take a look there : https://github.com/matxx/bf-wiki-fr    */\n' +
+                     '/*****************************************************************/\n'
+
+const header_end = '/* all developments in progress are dumped into this file */\n' +
+                   '@import url("/MediaWiki:Dev.css?ctype=text/css&action=raw");\n' +
+                   '/*****************************************************************/\n' +
+                   "/* if you wanna C/C some CSS, you'll find your happiness there : */\n" +
+                   '/* https://github.com/matxx/bf-wiki-fr/tree/master/dist/css      */\n' +
+                   '/*****************************************************************/\n'
+
+
 gulp.task('clean', function() {
   return del(['dist'])
 })
@@ -37,10 +50,14 @@ gulp.task('minify:css', function() {
 const nodemw = require('nodemw')
 const fs = require('fs')
 
-function logAndExecute(callback) {
+function logAndExecute(callback, caller) {
   return function (err, data) {
     if (err) {
-      console.log(err)
+      if (err.code === 'ENOENT' && caller === 'uploadToWiki') {
+        callback('')
+      } else {
+        console.log(err)
+      }
     }
     else {
       callback(data)
@@ -49,22 +66,32 @@ function logAndExecute(callback) {
 }
 
 gulp.task('upload:css', function() {
+  uploadToWiki('MediaWiki:Dev.css', 'changed.min.css')
+})
+
+gulp.task('deploy:css', function() {
+  uploadToWiki('MediaWiki:Common.css', 'all.min.css', true)
+})
+
+function uploadToWiki(page, file, with_header) {
   let bot = new nodemw({
     protocol: 'http',
     server: process.env.WIKI_DOMAIN_EU_FR,
     path: '',
     debug: true
   })
-  const cssPath = path.join(__dirname, 'dist', 'css', 'changed.min.css')
+  const cssPath = path.join(__dirname, 'dist', 'css', file)
 
-  bot.logIn(process.env.WIKI_BOT_USERNAME, process.env.WIKI_BOT_PASSWORD, logAndExecute(readFile))
+  bot.logIn(process.env.WIKI_BOT_USERNAME, process.env.WIKI_BOT_PASSWORD, logAndExecute(readFile, 'uploadToWiki'))
 
   function readFile() {
     fs.readFile(cssPath, logAndExecute(uploadCss))
   }
 
   function uploadCss(css) {
-    bot.edit('MediaWiki:Dev.css', css, 'update CSS', '1', function (err, data) {
+    let text = css
+    if (with_header) { text = header_start + css + '\n' + header_end }
+    bot.edit(page, text, 'update CSS', '1', function (err, data) {
       if (err) {
         console.log(err)
       }
@@ -73,4 +100,4 @@ gulp.task('upload:css', function() {
       }
     })
   }
-})
+}
