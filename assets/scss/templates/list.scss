@@ -103,21 +103,21 @@ $battle_bad_icons: (ailments-poison, ailments-weakness, ailments-sickness, ailme
 
 @for $i from 1 through length($battle_bad_icons) {
   $col: nth($battle_bad_icons, $i);
-  .list-with-icons li.#{$col}::before { @include battle_bad_icon(); @include icon-pos($i, 1); }
+  .list-with-icons li.#{$col}::before { @include battle_bad_icon(); @include icon-pos(1, $i); }
 }
 
 $battle_buff_icons_eu: (eu-double-atk, eu-double-bb, eu-shield-rec);
 
 @for $i from 1 through length($battle_buff_icons_eu) {
   $col: nth($battle_buff_icons_eu, $i);
-  .list-with-icons li.#{$col}::before { @include battle_buff_icon_eu(); @include icon-pos($i, 1); }
+  .list-with-icons li.#{$col}::before { @include battle_buff_icon_eu(); @include icon-pos(1, $i); }
 }
 
 // $battle_buff_icons_sg: ();
 //
 // @for $i from 1 through length($battle_buff_icons_sg) {
 //   $col: nth($battle_buff_icons_sg, $i);
-//   .list-with-icons li.#{$col}::before { @include battle_buff_icon_sg(); @include icon-pos($i, 1); }
+//   .list-with-icons li.#{$col}::before { @include battle_buff_icon_sg(); @include icon-pos(1, $i); }
 // }
 
 .list-with-icons li.sg-stealth::before { @include battle_buff_icon_sg(); background-position: -260px 0; }

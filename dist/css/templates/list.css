@@ -533,27 +533,27 @@
 .list-with-icons li.ailments-weakness::before {
   background-image: url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/6/6e/Battle_bad_icon.png/revision/latest?cb=20170713013337&path-prefix=fr");
   background-size: 600% 100%;
-  background-position: 0px -20px; }
+  background-position: -20px 0px; }
 
 .list-with-icons li.ailments-sickness::before {
   background-image: url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/6/6e/Battle_bad_icon.png/revision/latest?cb=20170713013337&path-prefix=fr");
   background-size: 600% 100%;
-  background-position: 0px -40px; }
+  background-position: -40px 0px; }
 
 .list-with-icons li.ailments-injury::before {
   background-image: url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/6/6e/Battle_bad_icon.png/revision/latest?cb=20170713013337&path-prefix=fr");
   background-size: 600% 100%;
-  background-position: 0px -60px; }
+  background-position: -60px 0px; }
 
 .list-with-icons li.ailments-curse::before {
   background-image: url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/6/6e/Battle_bad_icon.png/revision/latest?cb=20170713013337&path-prefix=fr");
   background-size: 600% 100%;
-  background-position: 0px -80px; }
+  background-position: -80px 0px; }
 
 .list-with-icons li.ailments-paralysis::before {
   background-image: url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/6/6e/Battle_bad_icon.png/revision/latest?cb=20170713013337&path-prefix=fr");
   background-size: 600% 100%;
-  background-position: 0px -100px; }
+  background-position: -100px 0px; }
 
 .list-with-icons li.eu-double-atk::before {
   background-image: url("//vignette1.wikia.nocookie.net/bravefrontierrpg/images/3/3d/Battle_buff_icon_eu.png/revision/latest?cb=20170713013422&path-prefix=fr");
@@ -563,12 +563,12 @@
 .list-with-icons li.eu-double-bb::before {
   background-image: url("//vignette1.wikia.nocookie.net/bravefrontierrpg/images/3/3d/Battle_buff_icon_eu.png/revision/latest?cb=20170713013422&path-prefix=fr");
   background-size: 1500% 600%;
-  background-position: 0px -20px; }
+  background-position: -20px 0px; }
 
 .list-with-icons li.eu-shield-rec::before {
   background-image: url("//vignette1.wikia.nocookie.net/bravefrontierrpg/images/3/3d/Battle_buff_icon_eu.png/revision/latest?cb=20170713013422&path-prefix=fr");
   background-size: 1500% 600%;
-  background-position: 0px -40px; }
+  background-position: -40px 0px; }
 
 .list-with-icons li.sg-stealth::before {
   background-image: url("//vignette1.wikia.nocookie.net/bravefrontierrpg/images/4/41/Battle_buff_icon_sg.png/revision/latest?cb=20170713013450&path-prefix=fr");

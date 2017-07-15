@@ -5,6 +5,10 @@
   width: 100% !important;
 }
 
+.white-space-nowrap {
+  white-space: nowrap;
+}
+
 .wiki-container {
   @include wiki-container();
   margin: 20px 5px;
@@ -47,18 +51,26 @@
           }
         }
       }
+    } @else if $property == "color" {
+
     } @else { // $property == "background"
       @each $force, $color in $color-or-map {
         .#{$element}-background-#{$force} {
           background-color: $color !important;
         }
       }
+      .#{$element}-background-like-border {
+        background-color: map-get($element-data, border) !important;
+      }
+      .#{$element}-color-like-border {
+        color: map-get($element-data, border) !important;
+      }
     }
   }
 }
 
 $properties: margin padding;
-$sizes: 0 5px 10px 15px 20px 25px;
+$sizes: 0 5px 10px 15px 20px 25px 30px;
 @each $property in $properties {
   @each $size in $sizes {
     .#{$property}-#{$size} {
