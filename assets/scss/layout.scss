@@ -1,13 +1,7 @@
 @import '_mixins';
 @import '_colors';
 
-.full-width {
-  width: 100% !important;
-}
-
-.white-space-nowrap {
-  white-space: nowrap;
-}
+.mobile-toc { display: none; }
 
 .wiki-container {
   @include wiki-container();
@@ -69,17 +63,12 @@
   }
 }
 
-$properties: margin padding;
-$sizes: 0 5px 10px 15px 20px 25px 30px;
-@each $property in $properties {
-  @each $size in $sizes {
-    .#{$property}-#{$size} {
-      margin: $size !important;
-    }
-    @each $side in $sides {
-      .#{$property}-#{$side}-#{$size} {
-        #{$property}-#{$side}: $size !important;
-      }
-    }
+// right column on home page => 320px for iframe News
+@media only screen and (min-width:1024px) {
+  .wikia-main-page-tag-lcs, .main-page-tag-lcs-exploded {
+    @include width-calc(100%, 340px);
+  }
+  .main-page-tag-rcs {
+    width: 320px;
   }
 }

@@ -1,0 +1,118 @@
+/* IMPORT CUSTOMISED STYLE */
+.i18ndoc {
+  background-color: #FFF77D;
+  border-bottom: 1px solid lightgrey;
+  font-family: monospace;
+  font-size: 8pt;
+  height: 140px;
+  overflow: auto;
+  padding: 3px; }
+
+/* Hover Class */
+.hoverimage img {
+  opacity: 0.70;
+  filter: alpha(opacity=70);
+  /* For IE8 and earlier */ }
+
+.hoverimage img:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  /* For IE8 and earlier */ }
+
+/* Navigation Hover Class */
+.hovernav img {
+  opacity: 0.70;
+  filter: alpha(opacity=70);
+  /* For IE8 and earlier */ }
+
+.hovernav img:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  /* For IE8 and earlier */ }
+
+/* Picture tweaks */
+.WikiaArticle .thumbcaption {
+  font-size: 9pt; }
+
+.WikiaArticle .picture-attribution {
+  display: none; }
+
+/* unit detail page anime support */
+.unit-toggle:hover ~ .unit-avatar {
+  visibility: hidden; }
+
+.unit-toggle ~ .unit-avatar {
+  visibility: visible; }
+
+.unit-toggle:hover ~ .unit-anime {
+  visibility: visible; }
+
+.unit-toggle ~ .unit-anime {
+  visibility: hidden; }
+
+/* css-hover-trigger */
+.css-hover-trigger:hover ~ .css-hover-hide {
+  visibility: hidden; }
+
+.css-hover-trigger ~ .css-hover-hide {
+  visibility: visible; }
+
+.css-hover-trigger:hover ~ .css-hover-display {
+  visibility: visible; }
+
+.css-hover-trigger ~ .css-hover-display {
+  visibility: hidden; }
+
+/*Floating Table Header Class*/
+.floatingHeader {
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  z-index: 999; }
+
+/** Display headers in tabbers **/
+.tabberlive .tabbertab h2, .tabberlive .tabbertab h3 {
+  display: block !important; }
+
+/*Tighten flytabs*/
+.tabs li a {
+  padding: 1px 8px; }
+
+/*Tighten Page Header*/
+.WikiaPageHeader,
+.wikinav2 .WikiaPageHeader {
+  padding-bottom: 5px !important; }
+
+.wikinav2 .WikiaPageHeader {
+  padding-right: 235px; }
+
+.socialmedia-share.top {
+  top: -5px !important; }
+
+.wikinav2 .WikiaPageHeader > .tally {
+  right: 120px; }
+
+/*one-column*/
+.wikinav2.oasis-one-column .WikiaPageHeader > .tally {
+  right: 450px !important; }
+
+.wikinav2.oasis-one-column .WikiaPageHeader > .socialmedia-share.top {
+  right: 330px !important;
+  top: -10px !important; }
+
+/*Support Tighten Tables*/
+.article-table.tight td,
+.article-table.tight th:first-child {
+  padding: 0 6px; }
+
+/*remove bottom border for last row in table*/
+.article-table.tight tr:last-child > th,
+.article-table.tight tr:last-child > td {
+  border-bottom: none; }
+
+.noborder {
+  border-top: 0;
+  border-bottom: 0; }
+
+.nobordertop {
+  border-top: 0; }

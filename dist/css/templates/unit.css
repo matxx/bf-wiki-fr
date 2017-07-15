@@ -1,0 +1,26 @@
+@charset "UTF-8";
+.unit-statup {
+  background-color: #e3ffe3; }
+
+.unit-statup::before {
+  content: '↑';
+  float: right;
+  position: relative;
+  margin: -4px -10px;
+  font-size: small;
+  overflow: hidden;
+  height: 7px;
+  line-height: 8px; }
+
+.unit-statdn {
+  background-color: #ffe3e3; }
+
+.unit-statdn::before {
+  content: '↓';
+  float: right;
+  position: relative;
+  margin: -4px -10px;
+  font-size: small;
+  overflow: hidden;
+  height: 8px;
+  line-height: 0; }

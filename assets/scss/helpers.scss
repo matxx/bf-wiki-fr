@@ -1,0 +1,48 @@
+@import '_mixins';
+
+.full-width {
+  width: 100% !important;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.text-white {
+  color: white !important;
+}
+.text-white a {
+  color: inherit !important;
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
+}
+
+.img-responsive img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+$properties: margin padding;
+$sizes: 0 5px 10px 15px 20px 25px 30px;
+@each $property in $properties {
+  @each $size in $sizes {
+    .#{$property}-#{$size} {
+      margin: $size !important;
+    }
+    @each $side in $sides {
+      .#{$property}-#{$side}-#{$size} {
+        #{$property}-#{$side}: $size !important;
+      }
+    }
+  }
+}

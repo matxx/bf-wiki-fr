@@ -1,0 +1,11 @@
+.rail-module.DiscordIntegratorModule iframe {
+  height: 100%; }
+
+.ui-helper-hidden-accessible, .hidden {
+  display: none; }
+
+.tabs .selected a:hover {
+  padding-bottom: 1px !important; }
+
+.ogg-player audio, .ogg-player video {
+  vertical-align: middle; }
