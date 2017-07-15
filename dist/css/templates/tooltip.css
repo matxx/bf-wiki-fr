@@ -1,6 +1,7 @@
 .advanced-tooltip .tooltip-contents {
   display: none; }
 
+/* So that avatars appear behind tooltips */
 .wds-avatar-stack {
   z-index: 0; }
 

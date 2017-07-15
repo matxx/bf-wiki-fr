@@ -311,6 +311,7 @@ a[href$="/wiki/Spécial:Contributions/AlphaMoon"] {
 .padding-right-30px {
   padding-right: 30px !important; }
 
+/* InGame like Tooltips */
 .sys-popup {
   padding: 18px;
   position: relative;
@@ -341,6 +342,7 @@ a[href$="/wiki/Spécial:Contributions/AlphaMoon"] {
   background-color: #2C2C2C;
   background: url("//vignette2.wikia.nocookie.net/bravefrontierrpg/images/2/27/Wide_use_frame_line_left.png/revision/latest?cb=20161126111512&path-prefix=fr") center left no-repeat, url("//vignette2.wikia.nocookie.net/bravefrontierrpg/images/8/83/Wide_use_frame_line_right.png/revision/latest?cb=20161126111524&path-prefix=fr") center right no-repeat, url("//vignette2.wikia.nocookie.net/bravefrontierrpg/images/6/6e/Wide_use_frame_line_top.png/revision/latest?cb=20161126111503&path-prefix=fr") top center no-repeat, url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/0/09/Wide_use_frame_line_bottom.png/revision/latest?cb=20161126111449&path-prefix=fr") bottom center no-repeat; }
 
+/* InGame Main Background : [[File:base_v2.jpg]] */
 .bg-bf {
   background-image: url("//vignette4.wikia.nocookie.net/bravefrontierrpg/images/5/56/Base_v2.jpg/revision/latest?cb=20170530185246&path-prefix=fr");
   background-repeat: no-repeat;
@@ -408,6 +410,7 @@ a[href$="/wiki/Spécial:Contributions/AlphaMoon"] {
     padding: 6px 12px;
     border: 0; }
 
+/* $property == "background" */
 .fire-background-gentle {
   background-color: #FBEFEF !important; }
 
@@ -498,6 +501,7 @@ a[href$="/wiki/Spécial:Contributions/AlphaMoon"] {
 .fire-border-5px-right {
   border-right: #FE2E2E 5px solid !important; }
 
+/* $property == "background" */
 .water-background-gentle {
   background-color: #EFFBFB !important; }
 
@@ -588,6 +592,7 @@ a[href$="/wiki/Spécial:Contributions/AlphaMoon"] {
 .water-border-5px-right {
   border-right: #2E2EFE 5px solid !important; }
 
+/* $property == "background" */
 .earth-background-gentle {
   background-color: #EEFBEF !important; }
 
@@ -678,6 +683,7 @@ a[href$="/wiki/Spécial:Contributions/AlphaMoon"] {
 .earth-border-5px-right {
   border-right: #04B404 5px solid !important; }
 
+/* $property == "background" */
 .thunder-background-gentle {
   background-color: #FBFBEF !important; }
 
@@ -768,6 +774,7 @@ a[href$="/wiki/Spécial:Contributions/AlphaMoon"] {
 .thunder-border-5px-right {
   border-right: #D7DF01 5px solid !important; }
 
+/* $property == "background" */
 .light-background-gentle {
   background-color: #FFFFFF !important; }
 
@@ -858,6 +865,7 @@ a[href$="/wiki/Spécial:Contributions/AlphaMoon"] {
 .light-border-5px-right {
   border-right: #A4A4A4 5px solid !important; }
 
+/* $property == "background" */
 .dark-background-gentle {
   background-color: #F8EFFB !important; }
 
@@ -948,6 +956,7 @@ a[href$="/wiki/Spécial:Contributions/AlphaMoon"] {
 .dark-border-5px-right {
   border-right: #6A0888 5px solid !important; }
 
+/* $property == "background" */
 .unknown-background-gentle {
   background-color: #FAFAFA !important; }
 
@@ -1038,6 +1047,7 @@ a[href$="/wiki/Spécial:Contributions/AlphaMoon"] {
 .unknown-border-5px-right {
   border-right: #000000 5px solid !important; }
 
+/* right column on home page => 320px for iframe News */
 @media only screen and (min-width: 1024px) {
   .wikia-main-page-tag-lcs, .main-page-tag-lcs-exploded {
     width: -webkit-calc(100% - 340px);
@@ -1047,6 +1057,7 @@ a[href$="/wiki/Spécial:Contributions/AlphaMoon"] {
   .main-page-tag-rcs {
     width: 320px; } }
 
+/* make italic the redirections on Special:Allpages and Special:Watchlist */
 .allpagesredirects, .watchlistredir {
   font-style: italic; }
 
@@ -1169,12 +1180,15 @@ a[href$="/wiki/Spécial:Contributions/AlphaMoon"] {
 .nobordertop {
   border-top: 0; }
 
+/* for some reason, the default is 90%, leaving up lots of empty space... */
 .rail-module.DiscordIntegratorModule iframe {
   height: 100%; }
 
+/* hide jQuery auto-complete count of results */
 .ui-helper-hidden-accessible, .hidden {
   display: none; }
 
+/* tabview correction */
 .tabs .selected a:hover {
   padding-bottom: 1px !important; }
 
@@ -1315,10 +1329,12 @@ a[href$="/wiki/Spécial:Contributions/AlphaMoon"] {
   left: 0px;
   top: -2px; }
 
+/* Icon toggling unit thum/full on unit page */
 .list-with-icons li.swords::before {
   background-image: url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/0/05/Film.png/revision/latest?cb=20141002102919&path-prefix=fr");
   background-size: 100% 100%; }
 
+/* BB targeting icons */
 .list-with-icons li.multi::before {
   background-image: url("//vignette2.wikia.nocookie.net/bravefrontierrpg/images/f/fc/Icone_multi.png/revision/latest/scale-to-width-down/17?cb=20150504233341&path-prefix=fr");
   background-size: 100% 100%; }
@@ -1861,6 +1877,7 @@ a[href$="/wiki/Spécial:Contributions/AlphaMoon"] {
 .advanced-tooltip .tooltip-contents {
   display: none; }
 
+/* So that avatars appear behind tooltips */
 .wds-avatar-stack {
   z-index: 0; }
 
@@ -2219,6 +2236,7 @@ a[href$="/wiki/Spécial:Contributions/AlphaMoon"] {
 .tooltip-unit-omniskill-cat-Special img {
   top: -250px; }
 
+/* http://nosmoking.developpez.com/demos/css/texte_defilant.html */
 .marquee {
   overflow: hidden; }
 

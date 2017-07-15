@@ -1,9 +1,12 @@
+/* for some reason, the default is 90%, leaving up lots of empty space... */
 .rail-module.DiscordIntegratorModule iframe {
   height: 100%; }
 
+/* hide jQuery auto-complete count of results */
 .ui-helper-hidden-accessible, .hidden {
   display: none; }
 
+/* tabview correction */
 .tabs .selected a:hover {
   padding-bottom: 1px !important; }
 

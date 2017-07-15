@@ -55,12 +55,12 @@ $icon-size: 20px;
   background-size: 1500% 600%;
 }
 
-// Icon toggling unit thum/full on unit page
+/* Icon toggling unit thum/full on unit page */
 .list-with-icons li.swords::before {
   background-image: url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/0/05/Film.png/revision/latest?cb=20141002102919&path-prefix=fr");
   background-size: 100% 100%;
 }
-// BB targeting icons
+/* BB targeting icons */
 .list-with-icons li.multi::before {
   background-image: url("//vignette2.wikia.nocookie.net/bravefrontierrpg/images/f/fc/Icone_multi.png/revision/latest/scale-to-width-down/17?cb=20150504233341&path-prefix=fr");
   background-size: 100% 100%;

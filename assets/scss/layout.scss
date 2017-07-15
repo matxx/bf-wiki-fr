@@ -47,7 +47,7 @@
       }
     } @else if $property == "color" {
 
-    } @else { // $property == "background"
+    } @else { /* $property == "background" */
       @each $force, $color in $color-or-map {
         .#{$element}-background-#{$force} {
           background-color: $color !important;
@@ -63,7 +63,7 @@
   }
 }
 
-// right column on home page => 320px for iframe News
+/* right column on home page => 320px for iframe News */
 @media only screen and (min-width:1024px) {
   .wikia-main-page-tag-lcs, .main-page-tag-lcs-exploded {
     @include width-calc(100%, 340px);

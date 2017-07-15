@@ -1,3 +1,4 @@
+/* InGame like Tooltips */
 .sys-popup {
   padding: 18px;
   position: relative;
@@ -28,6 +29,7 @@
   background-color: #2C2C2C;
   background: url("//vignette2.wikia.nocookie.net/bravefrontierrpg/images/2/27/Wide_use_frame_line_left.png/revision/latest?cb=20161126111512&path-prefix=fr") center left no-repeat, url("//vignette2.wikia.nocookie.net/bravefrontierrpg/images/8/83/Wide_use_frame_line_right.png/revision/latest?cb=20161126111524&path-prefix=fr") center right no-repeat, url("//vignette2.wikia.nocookie.net/bravefrontierrpg/images/6/6e/Wide_use_frame_line_top.png/revision/latest?cb=20161126111503&path-prefix=fr") top center no-repeat, url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/0/09/Wide_use_frame_line_bottom.png/revision/latest?cb=20161126111449&path-prefix=fr") bottom center no-repeat; }
 
+/* InGame Main Background : [[File:base_v2.jpg]] */
 .bg-bf {
   background-image: url("//vignette4.wikia.nocookie.net/bravefrontierrpg/images/5/56/Base_v2.jpg/revision/latest?cb=20170530185246&path-prefix=fr");
   background-repeat: no-repeat;

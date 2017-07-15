@@ -54,6 +54,7 @@
     padding: 6px 12px;
     border: 0; }
 
+/* $property == "background" */
 .fire-background-gentle {
   background-color: #FBEFEF !important; }
 
@@ -144,6 +145,7 @@
 .fire-border-5px-right {
   border-right: #FE2E2E 5px solid !important; }
 
+/* $property == "background" */
 .water-background-gentle {
   background-color: #EFFBFB !important; }
 
@@ -234,6 +236,7 @@
 .water-border-5px-right {
   border-right: #2E2EFE 5px solid !important; }
 
+/* $property == "background" */
 .earth-background-gentle {
   background-color: #EEFBEF !important; }
 
@@ -324,6 +327,7 @@
 .earth-border-5px-right {
   border-right: #04B404 5px solid !important; }
 
+/* $property == "background" */
 .thunder-background-gentle {
   background-color: #FBFBEF !important; }
 
@@ -414,6 +418,7 @@
 .thunder-border-5px-right {
   border-right: #D7DF01 5px solid !important; }
 
+/* $property == "background" */
 .light-background-gentle {
   background-color: #FFFFFF !important; }
 
@@ -504,6 +509,7 @@
 .light-border-5px-right {
   border-right: #A4A4A4 5px solid !important; }
 
+/* $property == "background" */
 .dark-background-gentle {
   background-color: #F8EFFB !important; }
 
@@ -594,6 +600,7 @@
 .dark-border-5px-right {
   border-right: #6A0888 5px solid !important; }
 
+/* $property == "background" */
 .unknown-background-gentle {
   background-color: #FAFAFA !important; }
 
@@ -684,6 +691,7 @@
 .unknown-border-5px-right {
   border-right: #000000 5px solid !important; }
 
+/* right column on home page => 320px for iframe News */
 @media only screen and (min-width: 1024px) {
   .wikia-main-page-tag-lcs, .main-page-tag-lcs-exploded {
     width: -webkit-calc(100% - 340px);
