@@ -1697,6 +1697,7 @@ a[href$="/wiki/Spécial:Contributions/AlphaMoon"] {
 .header-multiplier-right {
   float: right; }
 
+
 @charset "UTF-8";
 #tooltip-wrapper .expand-from-top {
   animation: expand-from-top 0.5s ease-out; }

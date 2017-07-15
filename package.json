@@ -7,7 +7,7 @@
     "build:css": "gulp build:css",
     "clean": "gulp clean",
     "minify:css": "gulp minify:css",
-    "upload:css": "node tasks/bot.js",
+    "upload:css": "gulp upload:css",
     "watch:css": "nodemon -e scss -x 'npm run clean && npm run build:css && npm run minify:css && npm run upload:css'"
   },
   "repository": {
