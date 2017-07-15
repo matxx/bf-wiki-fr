@@ -1,0 +1,28 @@
+.header-multiplier {
+  font-weight: 700;
+  color: #FED83C;
+  text-shadow: -1px 0 1px black,0 1px 1px black,1px 0 1px black,0 -1px 1px black; }
+
+.header-multiplier::before {
+  padding: 4px 10px;
+  margin: 0 4px;
+  background-image: url("//vignette4.wikia.nocookie.net/bravefrontierrpg/images/1/19/Quest_multiplier_arrow_left.png/revision/latest?cb=20170705183901&path-prefix=fr");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+  content: "\200B"; }
+
+.header-multiplier::after {
+  padding: 4px 10px;
+  margin: 0 4px;
+  background-image: url("//vignette2.wikia.nocookie.net/bravefrontierrpg/images/e/e7/Quest_multiplier_arrow_right.png/revision/latest?cb=20170705183913&path-prefix=fr");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+  content: "\200B"; }
+
+.header-multiplier-left {
+  float: left; }
+
+.header-multiplier-right {
+  float: right; }

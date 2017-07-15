@@ -1,0 +1,1198 @@
+.full-width {
+  width: 100% !important; }
+
+.wiki-container {
+  padding: 2px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  margin: 20px 5px; }
+  .wiki-container.fire {
+    box-shadow: 0 0 5px #FE2E2E; }
+  .wiki-container.water {
+    box-shadow: 0 0 5px #2E2EFE; }
+  .wiki-container.earth {
+    box-shadow: 0 0 5px #04B404; }
+  .wiki-container.thunder {
+    box-shadow: 0 0 5px #D7DF01; }
+  .wiki-container.light {
+    box-shadow: 0 0 5px #A4A4A4; }
+  .wiki-container.dark {
+    box-shadow: 0 0 5px #6A0888; }
+  .wiki-container.unknown {
+    box-shadow: 0 0 5px #000000; }
+  .wiki-container .article-table {
+    background: initial;
+    margin: 0;
+    border: 0; }
+  .wiki-container .wiki-container-header {
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-top-left-radius: 3px;
+    -ms-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-top-right-radius: 3px;
+    -ms-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 3px 3px 3px 12px; }
+  .wiki-container .wiki-container-header.fire {
+    background: #F6CECE; }
+  .wiki-container .wiki-container-header.water {
+    background: #A9D0F5; }
+  .wiki-container .wiki-container-header.earth {
+    background: #A9F5A9; }
+  .wiki-container .wiki-container-header.thunder {
+    background: #F3F781; }
+  .wiki-container .wiki-container-header.light {
+    background: #F2F2F2; }
+  .wiki-container .wiki-container-header.dark {
+    background: #D0A9F5; }
+  .wiki-container .wiki-container-header.unknown {
+    background: #DDDDDD; }
+  .wiki-container .wiki-container-content {
+    padding: 6px 12px;
+    border: 0; }
+
+.fire-background-gentle {
+  background-color: #FBEFEF !important; }
+
+.fire-background-medium {
+  background-color: #FFE3E3 !important; }
+
+.fire-background-strong {
+  background-color: #F6CECE !important; }
+
+.fire-border-1px {
+  border: #FE2E2E 1px solid !important; }
+
+.fire-border-1px-top {
+  border-top: #FE2E2E 1px solid !important; }
+
+.fire-border-1px-bottom {
+  border-bottom: #FE2E2E 1px solid !important; }
+
+.fire-border-1px-left {
+  border-left: #FE2E2E 1px solid !important; }
+
+.fire-border-1px-right {
+  border-right: #FE2E2E 1px solid !important; }
+
+.fire-border-2px {
+  border: #FE2E2E 2px solid !important; }
+
+.fire-border-2px-top {
+  border-top: #FE2E2E 2px solid !important; }
+
+.fire-border-2px-bottom {
+  border-bottom: #FE2E2E 2px solid !important; }
+
+.fire-border-2px-left {
+  border-left: #FE2E2E 2px solid !important; }
+
+.fire-border-2px-right {
+  border-right: #FE2E2E 2px solid !important; }
+
+.fire-border-3px {
+  border: #FE2E2E 3px solid !important; }
+
+.fire-border-3px-top {
+  border-top: #FE2E2E 3px solid !important; }
+
+.fire-border-3px-bottom {
+  border-bottom: #FE2E2E 3px solid !important; }
+
+.fire-border-3px-left {
+  border-left: #FE2E2E 3px solid !important; }
+
+.fire-border-3px-right {
+  border-right: #FE2E2E 3px solid !important; }
+
+.fire-border-4px {
+  border: #FE2E2E 4px solid !important; }
+
+.fire-border-4px-top {
+  border-top: #FE2E2E 4px solid !important; }
+
+.fire-border-4px-bottom {
+  border-bottom: #FE2E2E 4px solid !important; }
+
+.fire-border-4px-left {
+  border-left: #FE2E2E 4px solid !important; }
+
+.fire-border-4px-right {
+  border-right: #FE2E2E 4px solid !important; }
+
+.fire-border-5px {
+  border: #FE2E2E 5px solid !important; }
+
+.fire-border-5px-top {
+  border-top: #FE2E2E 5px solid !important; }
+
+.fire-border-5px-bottom {
+  border-bottom: #FE2E2E 5px solid !important; }
+
+.fire-border-5px-left {
+  border-left: #FE2E2E 5px solid !important; }
+
+.fire-border-5px-right {
+  border-right: #FE2E2E 5px solid !important; }
+
+.water-background-gentle {
+  background-color: #EFFBFB !important; }
+
+.water-background-medium {
+  background-color: #D3F3FF !important; }
+
+.water-background-strong {
+  background-color: #A9D0F5 !important; }
+
+.water-border-1px {
+  border: #2E2EFE 1px solid !important; }
+
+.water-border-1px-top {
+  border-top: #2E2EFE 1px solid !important; }
+
+.water-border-1px-bottom {
+  border-bottom: #2E2EFE 1px solid !important; }
+
+.water-border-1px-left {
+  border-left: #2E2EFE 1px solid !important; }
+
+.water-border-1px-right {
+  border-right: #2E2EFE 1px solid !important; }
+
+.water-border-2px {
+  border: #2E2EFE 2px solid !important; }
+
+.water-border-2px-top {
+  border-top: #2E2EFE 2px solid !important; }
+
+.water-border-2px-bottom {
+  border-bottom: #2E2EFE 2px solid !important; }
+
+.water-border-2px-left {
+  border-left: #2E2EFE 2px solid !important; }
+
+.water-border-2px-right {
+  border-right: #2E2EFE 2px solid !important; }
+
+.water-border-3px {
+  border: #2E2EFE 3px solid !important; }
+
+.water-border-3px-top {
+  border-top: #2E2EFE 3px solid !important; }
+
+.water-border-3px-bottom {
+  border-bottom: #2E2EFE 3px solid !important; }
+
+.water-border-3px-left {
+  border-left: #2E2EFE 3px solid !important; }
+
+.water-border-3px-right {
+  border-right: #2E2EFE 3px solid !important; }
+
+.water-border-4px {
+  border: #2E2EFE 4px solid !important; }
+
+.water-border-4px-top {
+  border-top: #2E2EFE 4px solid !important; }
+
+.water-border-4px-bottom {
+  border-bottom: #2E2EFE 4px solid !important; }
+
+.water-border-4px-left {
+  border-left: #2E2EFE 4px solid !important; }
+
+.water-border-4px-right {
+  border-right: #2E2EFE 4px solid !important; }
+
+.water-border-5px {
+  border: #2E2EFE 5px solid !important; }
+
+.water-border-5px-top {
+  border-top: #2E2EFE 5px solid !important; }
+
+.water-border-5px-bottom {
+  border-bottom: #2E2EFE 5px solid !important; }
+
+.water-border-5px-left {
+  border-left: #2E2EFE 5px solid !important; }
+
+.water-border-5px-right {
+  border-right: #2E2EFE 5px solid !important; }
+
+.earth-background-gentle {
+  background-color: #EEFBEF !important; }
+
+.earth-background-medium {
+  background-color: #E3FFE3 !important; }
+
+.earth-background-strong {
+  background-color: #A9F5A9 !important; }
+
+.earth-border-1px {
+  border: #04B404 1px solid !important; }
+
+.earth-border-1px-top {
+  border-top: #04B404 1px solid !important; }
+
+.earth-border-1px-bottom {
+  border-bottom: #04B404 1px solid !important; }
+
+.earth-border-1px-left {
+  border-left: #04B404 1px solid !important; }
+
+.earth-border-1px-right {
+  border-right: #04B404 1px solid !important; }
+
+.earth-border-2px {
+  border: #04B404 2px solid !important; }
+
+.earth-border-2px-top {
+  border-top: #04B404 2px solid !important; }
+
+.earth-border-2px-bottom {
+  border-bottom: #04B404 2px solid !important; }
+
+.earth-border-2px-left {
+  border-left: #04B404 2px solid !important; }
+
+.earth-border-2px-right {
+  border-right: #04B404 2px solid !important; }
+
+.earth-border-3px {
+  border: #04B404 3px solid !important; }
+
+.earth-border-3px-top {
+  border-top: #04B404 3px solid !important; }
+
+.earth-border-3px-bottom {
+  border-bottom: #04B404 3px solid !important; }
+
+.earth-border-3px-left {
+  border-left: #04B404 3px solid !important; }
+
+.earth-border-3px-right {
+  border-right: #04B404 3px solid !important; }
+
+.earth-border-4px {
+  border: #04B404 4px solid !important; }
+
+.earth-border-4px-top {
+  border-top: #04B404 4px solid !important; }
+
+.earth-border-4px-bottom {
+  border-bottom: #04B404 4px solid !important; }
+
+.earth-border-4px-left {
+  border-left: #04B404 4px solid !important; }
+
+.earth-border-4px-right {
+  border-right: #04B404 4px solid !important; }
+
+.earth-border-5px {
+  border: #04B404 5px solid !important; }
+
+.earth-border-5px-top {
+  border-top: #04B404 5px solid !important; }
+
+.earth-border-5px-bottom {
+  border-bottom: #04B404 5px solid !important; }
+
+.earth-border-5px-left {
+  border-left: #04B404 5px solid !important; }
+
+.earth-border-5px-right {
+  border-right: #04B404 5px solid !important; }
+
+.thunder-background-gentle {
+  background-color: #FBFBEF !important; }
+
+.thunder-background-medium {
+  background-color: #FFFFB3 !important; }
+
+.thunder-background-strong {
+  background-color: #F3F781 !important; }
+
+.thunder-border-1px {
+  border: #D7DF01 1px solid !important; }
+
+.thunder-border-1px-top {
+  border-top: #D7DF01 1px solid !important; }
+
+.thunder-border-1px-bottom {
+  border-bottom: #D7DF01 1px solid !important; }
+
+.thunder-border-1px-left {
+  border-left: #D7DF01 1px solid !important; }
+
+.thunder-border-1px-right {
+  border-right: #D7DF01 1px solid !important; }
+
+.thunder-border-2px {
+  border: #D7DF01 2px solid !important; }
+
+.thunder-border-2px-top {
+  border-top: #D7DF01 2px solid !important; }
+
+.thunder-border-2px-bottom {
+  border-bottom: #D7DF01 2px solid !important; }
+
+.thunder-border-2px-left {
+  border-left: #D7DF01 2px solid !important; }
+
+.thunder-border-2px-right {
+  border-right: #D7DF01 2px solid !important; }
+
+.thunder-border-3px {
+  border: #D7DF01 3px solid !important; }
+
+.thunder-border-3px-top {
+  border-top: #D7DF01 3px solid !important; }
+
+.thunder-border-3px-bottom {
+  border-bottom: #D7DF01 3px solid !important; }
+
+.thunder-border-3px-left {
+  border-left: #D7DF01 3px solid !important; }
+
+.thunder-border-3px-right {
+  border-right: #D7DF01 3px solid !important; }
+
+.thunder-border-4px {
+  border: #D7DF01 4px solid !important; }
+
+.thunder-border-4px-top {
+  border-top: #D7DF01 4px solid !important; }
+
+.thunder-border-4px-bottom {
+  border-bottom: #D7DF01 4px solid !important; }
+
+.thunder-border-4px-left {
+  border-left: #D7DF01 4px solid !important; }
+
+.thunder-border-4px-right {
+  border-right: #D7DF01 4px solid !important; }
+
+.thunder-border-5px {
+  border: #D7DF01 5px solid !important; }
+
+.thunder-border-5px-top {
+  border-top: #D7DF01 5px solid !important; }
+
+.thunder-border-5px-bottom {
+  border-bottom: #D7DF01 5px solid !important; }
+
+.thunder-border-5px-left {
+  border-left: #D7DF01 5px solid !important; }
+
+.thunder-border-5px-right {
+  border-right: #D7DF01 5px solid !important; }
+
+.light-background-gentle {
+  background-color: #FFFFFF !important; }
+
+.light-background-medium {
+  background-color: #F8F8F8 !important; }
+
+.light-background-strong {
+  background-color: #F2F2F2 !important; }
+
+.light-border-1px {
+  border: #A4A4A4 1px solid !important; }
+
+.light-border-1px-top {
+  border-top: #A4A4A4 1px solid !important; }
+
+.light-border-1px-bottom {
+  border-bottom: #A4A4A4 1px solid !important; }
+
+.light-border-1px-left {
+  border-left: #A4A4A4 1px solid !important; }
+
+.light-border-1px-right {
+  border-right: #A4A4A4 1px solid !important; }
+
+.light-border-2px {
+  border: #A4A4A4 2px solid !important; }
+
+.light-border-2px-top {
+  border-top: #A4A4A4 2px solid !important; }
+
+.light-border-2px-bottom {
+  border-bottom: #A4A4A4 2px solid !important; }
+
+.light-border-2px-left {
+  border-left: #A4A4A4 2px solid !important; }
+
+.light-border-2px-right {
+  border-right: #A4A4A4 2px solid !important; }
+
+.light-border-3px {
+  border: #A4A4A4 3px solid !important; }
+
+.light-border-3px-top {
+  border-top: #A4A4A4 3px solid !important; }
+
+.light-border-3px-bottom {
+  border-bottom: #A4A4A4 3px solid !important; }
+
+.light-border-3px-left {
+  border-left: #A4A4A4 3px solid !important; }
+
+.light-border-3px-right {
+  border-right: #A4A4A4 3px solid !important; }
+
+.light-border-4px {
+  border: #A4A4A4 4px solid !important; }
+
+.light-border-4px-top {
+  border-top: #A4A4A4 4px solid !important; }
+
+.light-border-4px-bottom {
+  border-bottom: #A4A4A4 4px solid !important; }
+
+.light-border-4px-left {
+  border-left: #A4A4A4 4px solid !important; }
+
+.light-border-4px-right {
+  border-right: #A4A4A4 4px solid !important; }
+
+.light-border-5px {
+  border: #A4A4A4 5px solid !important; }
+
+.light-border-5px-top {
+  border-top: #A4A4A4 5px solid !important; }
+
+.light-border-5px-bottom {
+  border-bottom: #A4A4A4 5px solid !important; }
+
+.light-border-5px-left {
+  border-left: #A4A4A4 5px solid !important; }
+
+.light-border-5px-right {
+  border-right: #A4A4A4 5px solid !important; }
+
+.dark-background-gentle {
+  background-color: #F8EFFB !important; }
+
+.dark-background-medium {
+  background-color: #E5CCFF !important; }
+
+.dark-background-strong {
+  background-color: #D0A9F5 !important; }
+
+.dark-border-1px {
+  border: #6A0888 1px solid !important; }
+
+.dark-border-1px-top {
+  border-top: #6A0888 1px solid !important; }
+
+.dark-border-1px-bottom {
+  border-bottom: #6A0888 1px solid !important; }
+
+.dark-border-1px-left {
+  border-left: #6A0888 1px solid !important; }
+
+.dark-border-1px-right {
+  border-right: #6A0888 1px solid !important; }
+
+.dark-border-2px {
+  border: #6A0888 2px solid !important; }
+
+.dark-border-2px-top {
+  border-top: #6A0888 2px solid !important; }
+
+.dark-border-2px-bottom {
+  border-bottom: #6A0888 2px solid !important; }
+
+.dark-border-2px-left {
+  border-left: #6A0888 2px solid !important; }
+
+.dark-border-2px-right {
+  border-right: #6A0888 2px solid !important; }
+
+.dark-border-3px {
+  border: #6A0888 3px solid !important; }
+
+.dark-border-3px-top {
+  border-top: #6A0888 3px solid !important; }
+
+.dark-border-3px-bottom {
+  border-bottom: #6A0888 3px solid !important; }
+
+.dark-border-3px-left {
+  border-left: #6A0888 3px solid !important; }
+
+.dark-border-3px-right {
+  border-right: #6A0888 3px solid !important; }
+
+.dark-border-4px {
+  border: #6A0888 4px solid !important; }
+
+.dark-border-4px-top {
+  border-top: #6A0888 4px solid !important; }
+
+.dark-border-4px-bottom {
+  border-bottom: #6A0888 4px solid !important; }
+
+.dark-border-4px-left {
+  border-left: #6A0888 4px solid !important; }
+
+.dark-border-4px-right {
+  border-right: #6A0888 4px solid !important; }
+
+.dark-border-5px {
+  border: #6A0888 5px solid !important; }
+
+.dark-border-5px-top {
+  border-top: #6A0888 5px solid !important; }
+
+.dark-border-5px-bottom {
+  border-bottom: #6A0888 5px solid !important; }
+
+.dark-border-5px-left {
+  border-left: #6A0888 5px solid !important; }
+
+.dark-border-5px-right {
+  border-right: #6A0888 5px solid !important; }
+
+.unknown-background-gentle {
+  background-color: #FAFAFA !important; }
+
+.unknown-background-medium {
+  background-color: #F0F0F0 !important; }
+
+.unknown-background-strong {
+  background-color: #DDDDDD !important; }
+
+.unknown-border-1px {
+  border: #000000 1px solid !important; }
+
+.unknown-border-1px-top {
+  border-top: #000000 1px solid !important; }
+
+.unknown-border-1px-bottom {
+  border-bottom: #000000 1px solid !important; }
+
+.unknown-border-1px-left {
+  border-left: #000000 1px solid !important; }
+
+.unknown-border-1px-right {
+  border-right: #000000 1px solid !important; }
+
+.unknown-border-2px {
+  border: #000000 2px solid !important; }
+
+.unknown-border-2px-top {
+  border-top: #000000 2px solid !important; }
+
+.unknown-border-2px-bottom {
+  border-bottom: #000000 2px solid !important; }
+
+.unknown-border-2px-left {
+  border-left: #000000 2px solid !important; }
+
+.unknown-border-2px-right {
+  border-right: #000000 2px solid !important; }
+
+.unknown-border-3px {
+  border: #000000 3px solid !important; }
+
+.unknown-border-3px-top {
+  border-top: #000000 3px solid !important; }
+
+.unknown-border-3px-bottom {
+  border-bottom: #000000 3px solid !important; }
+
+.unknown-border-3px-left {
+  border-left: #000000 3px solid !important; }
+
+.unknown-border-3px-right {
+  border-right: #000000 3px solid !important; }
+
+.unknown-border-4px {
+  border: #000000 4px solid !important; }
+
+.unknown-border-4px-top {
+  border-top: #000000 4px solid !important; }
+
+.unknown-border-4px-bottom {
+  border-bottom: #000000 4px solid !important; }
+
+.unknown-border-4px-left {
+  border-left: #000000 4px solid !important; }
+
+.unknown-border-4px-right {
+  border-right: #000000 4px solid !important; }
+
+.unknown-border-5px {
+  border: #000000 5px solid !important; }
+
+.unknown-border-5px-top {
+  border-top: #000000 5px solid !important; }
+
+.unknown-border-5px-bottom {
+  border-bottom: #000000 5px solid !important; }
+
+.unknown-border-5px-left {
+  border-left: #000000 5px solid !important; }
+
+.unknown-border-5px-right {
+  border-right: #000000 5px solid !important; }
+
+.margin-0 {
+  margin: 0 !important; }
+
+.margin-top-0 {
+  margin-top: 0 !important; }
+
+.margin-bottom-0 {
+  margin-bottom: 0 !important; }
+
+.margin-left-0 {
+  margin-left: 0 !important; }
+
+.margin-right-0 {
+  margin-right: 0 !important; }
+
+.margin-5px {
+  margin: 5px !important; }
+
+.margin-top-5px {
+  margin-top: 5px !important; }
+
+.margin-bottom-5px {
+  margin-bottom: 5px !important; }
+
+.margin-left-5px {
+  margin-left: 5px !important; }
+
+.margin-right-5px {
+  margin-right: 5px !important; }
+
+.margin-10px {
+  margin: 10px !important; }
+
+.margin-top-10px {
+  margin-top: 10px !important; }
+
+.margin-bottom-10px {
+  margin-bottom: 10px !important; }
+
+.margin-left-10px {
+  margin-left: 10px !important; }
+
+.margin-right-10px {
+  margin-right: 10px !important; }
+
+.margin-15px {
+  margin: 15px !important; }
+
+.margin-top-15px {
+  margin-top: 15px !important; }
+
+.margin-bottom-15px {
+  margin-bottom: 15px !important; }
+
+.margin-left-15px {
+  margin-left: 15px !important; }
+
+.margin-right-15px {
+  margin-right: 15px !important; }
+
+.margin-20px {
+  margin: 20px !important; }
+
+.margin-top-20px {
+  margin-top: 20px !important; }
+
+.margin-bottom-20px {
+  margin-bottom: 20px !important; }
+
+.margin-left-20px {
+  margin-left: 20px !important; }
+
+.margin-right-20px {
+  margin-right: 20px !important; }
+
+.margin-25px {
+  margin: 25px !important; }
+
+.margin-top-25px {
+  margin-top: 25px !important; }
+
+.margin-bottom-25px {
+  margin-bottom: 25px !important; }
+
+.margin-left-25px {
+  margin-left: 25px !important; }
+
+.margin-right-25px {
+  margin-right: 25px !important; }
+
+.padding-0 {
+  margin: 0 !important; }
+
+.padding-top-0 {
+  padding-top: 0 !important; }
+
+.padding-bottom-0 {
+  padding-bottom: 0 !important; }
+
+.padding-left-0 {
+  padding-left: 0 !important; }
+
+.padding-right-0 {
+  padding-right: 0 !important; }
+
+.padding-5px {
+  margin: 5px !important; }
+
+.padding-top-5px {
+  padding-top: 5px !important; }
+
+.padding-bottom-5px {
+  padding-bottom: 5px !important; }
+
+.padding-left-5px {
+  padding-left: 5px !important; }
+
+.padding-right-5px {
+  padding-right: 5px !important; }
+
+.padding-10px {
+  margin: 10px !important; }
+
+.padding-top-10px {
+  padding-top: 10px !important; }
+
+.padding-bottom-10px {
+  padding-bottom: 10px !important; }
+
+.padding-left-10px {
+  padding-left: 10px !important; }
+
+.padding-right-10px {
+  padding-right: 10px !important; }
+
+.padding-15px {
+  margin: 15px !important; }
+
+.padding-top-15px {
+  padding-top: 15px !important; }
+
+.padding-bottom-15px {
+  padding-bottom: 15px !important; }
+
+.padding-left-15px {
+  padding-left: 15px !important; }
+
+.padding-right-15px {
+  padding-right: 15px !important; }
+
+.padding-20px {
+  margin: 20px !important; }
+
+.padding-top-20px {
+  padding-top: 20px !important; }
+
+.padding-bottom-20px {
+  padding-bottom: 20px !important; }
+
+.padding-left-20px {
+  padding-left: 20px !important; }
+
+.padding-right-20px {
+  padding-right: 20px !important; }
+
+.padding-25px {
+  margin: 25px !important; }
+
+.padding-top-25px {
+  padding-top: 25px !important; }
+
+.padding-bottom-25px {
+  padding-bottom: 25px !important; }
+
+.padding-left-25px {
+  padding-left: 25px !important; }
+
+.padding-right-25px {
+  padding-right: 25px !important; }
+
+.portable-infobox {
+  padding: 2px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  background-color: white;
+  margin-right: 5px; }
+  .portable-infobox .pi-title, .portable-infobox .pi-header {
+    text-shadow: 0 0 4px gray; }
+  .portable-infobox .article-table {
+    background: initial; }
+    .portable-infobox .article-table td {
+      border: 0; }
+
+.portable-infobox.pi-theme-fire {
+  box-shadow: 0 0 5px #FE2E2E;
+  background-color: #FBEFEF; }
+
+.pi-theme-fire .pi-title, .pi-theme-fire .pi-header {
+  background-color: #F6CECE; }
+
+.pi-theme-fire .pi-horizontal-group-item:nth-child(2n) {
+  background-color: #FFE3E3; }
+
+.portable-infobox.pi-theme-water {
+  box-shadow: 0 0 5px #2E2EFE;
+  background-color: #EFFBFB; }
+
+.pi-theme-water .pi-title, .pi-theme-water .pi-header {
+  background-color: #A9D0F5; }
+
+.pi-theme-water .pi-horizontal-group-item:nth-child(2n) {
+  background-color: #D3F3FF; }
+
+.portable-infobox.pi-theme-earth {
+  box-shadow: 0 0 5px #04B404;
+  background-color: #EEFBEF; }
+
+.pi-theme-earth .pi-title, .pi-theme-earth .pi-header {
+  background-color: #A9F5A9; }
+
+.pi-theme-earth .pi-horizontal-group-item:nth-child(2n) {
+  background-color: #E3FFE3; }
+
+.portable-infobox.pi-theme-thunder {
+  box-shadow: 0 0 5px #D7DF01;
+  background-color: #FBFBEF; }
+
+.pi-theme-thunder .pi-title, .pi-theme-thunder .pi-header {
+  background-color: #F3F781; }
+
+.pi-theme-thunder .pi-horizontal-group-item:nth-child(2n) {
+  background-color: #FFFFB3; }
+
+.portable-infobox.pi-theme-light {
+  box-shadow: 0 0 5px #A4A4A4;
+  background-color: #FFFFFF; }
+
+.pi-theme-light .pi-title, .pi-theme-light .pi-header {
+  background-color: #F2F2F2; }
+
+.pi-theme-light .pi-horizontal-group-item:nth-child(2n) {
+  background-color: #F8F8F8; }
+
+.portable-infobox.pi-theme-dark {
+  box-shadow: 0 0 5px #6A0888;
+  background-color: #F8EFFB; }
+
+.pi-theme-dark .pi-title, .pi-theme-dark .pi-header {
+  background-color: #D0A9F5; }
+
+.pi-theme-dark .pi-horizontal-group-item:nth-child(2n) {
+  background-color: #E5CCFF; }
+
+.portable-infobox.pi-theme-unknown {
+  box-shadow: 0 0 5px #000000;
+  background-color: #FAFAFA; }
+
+.pi-theme-unknown .pi-title, .pi-theme-unknown .pi-header {
+  background-color: #DDDDDD; }
+
+.pi-theme-unknown .pi-horizontal-group-item:nth-child(2n) {
+  background-color: #F0F0F0; }
+
+.item-container-left {
+  display: inline-block;
+  width: -webkit-calc(100% - 430px);
+  width: -moz-calc(100% - 430px);
+  width: -o-calc(100% - 430px);
+  width: calc(100% - 430px); }
+
+.item-page .portable-infobox {
+  width: 400px !important; }
+  .item-page .portable-infobox .pi-image {
+    display: none; }
+
+.portable-infobox .infobox-item-craft-facility-lvl {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 0 3px #000, 0 0 3px #000, 0 0 3px #000;
+  font-size: 20px; }
+
+.header-multiplier {
+  font-weight: 700;
+  color: #FED83C;
+  text-shadow: -1px 0 1px black,0 1px 1px black,1px 0 1px black,0 -1px 1px black; }
+
+.header-multiplier::before {
+  padding: 4px 10px;
+  margin: 0 4px;
+  background-image: url("//vignette4.wikia.nocookie.net/bravefrontierrpg/images/1/19/Quest_multiplier_arrow_left.png/revision/latest?cb=20170705183901&path-prefix=fr");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+  content: "\200B"; }
+
+.header-multiplier::after {
+  padding: 4px 10px;
+  margin: 0 4px;
+  background-image: url("//vignette2.wikia.nocookie.net/bravefrontierrpg/images/e/e7/Quest_multiplier_arrow_right.png/revision/latest?cb=20170705183913&path-prefix=fr");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+  content: "\200B"; }
+
+.header-multiplier-left {
+  float: left; }
+
+.header-multiplier-right {
+  float: right; }
+
+@charset "UTF-8";
+#tooltip-wrapper .expand-from-top {
+  animation: expand-from-top 0.5s ease-out; }
+
+@keyframes expand-from-top {
+  0% {
+    margin-top: -320px; }
+  100% {
+    margin-top: 0; } }
+
+#tooltip-wrapper .expand-from-left {
+  animation: expand-from-left 0.5s ease-out; }
+
+@keyframes expand-from-left {
+  0% {
+    margin-left: -320px; }
+  100% {
+    margin-left: 0; } }
+
+.tooltip-unit {
+  margin: 0 !important; }
+
+li.tooltip-unit-page {
+  display: inline-block;
+  vertical-align: top; }
+
+.tooltip-unit-header {
+  font-size: 14px;
+  line-height: 18px;
+  display: inline-block;
+  position: relative;
+  background-image: url("//vignette1.wikia.nocookie.net/bravefrontierrpg/images/4/40/Header_title_base_2.png/revision/latest?cb=20170530201607&path-prefix=fr");
+  background-repeat: repeat-x;
+  background-position: left center;
+  background-size: auto 100%;
+  padding: 2px 5px 2px 0;
+  margin: 10px 0 10px 15px; }
+
+.tooltip-unit-header::before {
+  background-image: url("//vignette2.wikia.nocookie.net/bravefrontierrpg/images/3/39/Header_title_base_1.png/revision/latest?cb=20170530201553&path-prefix=fr");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+  position: absolute;
+  top: 0px;
+  left: -15px;
+  width: 15px;
+  height: 100%;
+  content: " "; }
+
+.tooltip-unit-header::after {
+  background-image: url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/a/a9/Header_title_base_3.png/revision/latest?cb=20170530201628&path-prefix=fr");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 30px;
+  height: 100%;
+  content: " ";
+  margin-right: -25px; }
+
+.tooltip-unit-gender {
+  position: absolute;
+  top: 10px;
+  right: 10px; }
+
+.tooltip-unit-detail {
+  width: 100px;
+  padding: 0 8px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  color: #D2B56D;
+  text-shadow: 0 0 2px black;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  border: 1px solid #D2B56D; }
+
+.tooltip-unit-detail .tooltip-unit-detail-number {
+  float: right;
+  color: white; }
+
+.tooltip-unit-skill {
+  position: relative; }
+
+.tooltip-unit-skill-header {
+  position: absolute;
+  top: -2px;
+  left: 110px;
+  color: #FCA428;
+  font-size: 12px; }
+
+.tooltip-unit-ls .tooltip-unit-skill-header,
+.tooltip-unit-es .tooltip-unit-skill-header {
+  max-width: 200px; }
+
+.tooltip-unit-bb .tooltip-unit-skill-header,
+.tooltip-unit-sbb .tooltip-unit-skill-header,
+.tooltip-unit-ubb .tooltip-unit-skill-header {
+  max-width: 165px; }
+
+.tooltip-unit-skill-desc {
+  font-size: 12px;
+  padding: 0 5px;
+  width: 310px;
+  color: white; }
+
+.tooltip-unit-skill-gauge {
+  position: absolute;
+  top: -2px;
+  right: 10px;
+  color: #FCA428;
+  font-size: 12px; }
+
+.tooltip-unit-statup {
+  color: #00C853;
+  text-shadow: 0px 0px 1px gray; }
+
+.tooltip-unit-statup::before, .tooltip-unit-statup::after {
+  content: '⬆';
+  font-size: 8px; }
+
+.tooltip-unit-statdn {
+  color: red; }
+
+.tooltip-unit-statdn::before, .tooltip-unit-statdn::after {
+  content: '⬇';
+  font-size: 8px;
+  vertical-align: super; }
+
+.tooltip-unit-statup::before, .tooltip-unit-statdn::before {
+  position: relative;
+  left: -4px; }
+
+.tooltip-unit-omniskill {
+  position: relative;
+  color: white;
+  font-size: 12px; }
+
+.tooltip-unit-omniskill-cat-header {
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  line-height: 20px; }
+
+.tooltip-unit-omniskill-desc {
+  position: absolute;
+  left: 5px;
+  height: 45px;
+  width: 286px;
+  overflow: hidden;
+  z-index: 1;
+  padding: 0 5px; }
+
+.tooltip-unit-omniskill-background {
+  z-index: 1;
+  position: relative; }
+
+.tooltip-unit-omniskill-cat-icon {
+  position: absolute;
+  left: 280px;
+  top: 2px; }
+
+.tooltip-unit-omniskill-cat {
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  z-index: 0;
+  height: 26px;
+  overflow: hidden; }
+
+.tooltip-unit-omniskill-filler {
+  position: absolute;
+  top: -12.5px;
+  height: 2px; }
+
+.tooltip-unit-omniskill-cat-background img {
+  position: relative; }
+
+.tooltip-unit-omniskill-cat-Parameter-Boost img {
+  top: 0; }
+
+.tooltip-unit-omniskill-cat-Spark img {
+  top: -25px; }
+
+.tooltip-unit-omniskill-cat-Critical-Hits img {
+  top: -50px; }
+
+.tooltip-unit-omniskill-cat-Attack-Boost img {
+  top: -75px; }
+
+.tooltip-unit-omniskill-cat-BB-Gauge img {
+  top: -100px; }
+
+.tooltip-unit-omniskill-cat-HP-Recovery img {
+  top: -125px; }
+
+.tooltip-unit-omniskill-cat-Drops img {
+  top: -250px; }
+
+.tooltip-unit-omniskill-cat-Ailment-Resistance img {
+  top: -175px; }
+
+.tooltip-unit-omniskill-cat-Ailment-Infliction img {
+  top: -200px; }
+
+.tooltip-unit-omniskill-cat-Damage-Reduction img {
+  top: -225px; }
+
+.tooltip-unit-omniskill-cat-Special img {
+  top: -250px; }
+
+.marquee {
+  overflow: hidden; }
+
+.marquee:hover .marquee-scroller:before {
+  animation-play-state: paused; }
+
+.marquee .marquee-scroller {
+  white-space: nowrap;
+  display: inline-block;
+  cursor: pointer; }
+
+.marquee .marquee-scroller:before,
+.marquee .marquee-scroller:after {
+  content: attr(data-text) " ";
+  display: inline-block;
+  min-width: 50%; }
+
+.marquee .marquee-scroller:before {
+  animation: marquee-scroll 20s infinite linear; }
+
+@keyframes marquee-scroll {
+  0% {
+    margin-left: 0; }
+  100% {
+    margin-left: -50%; } }

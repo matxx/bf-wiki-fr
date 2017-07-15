@@ -5,7 +5,7 @@ const path = require('path')
 let bot = new nodemw({
   protocol: 'http',
   server: process.env.WIKI_DOMAIN_EU_FR,
-  path: '/',
+  path: '',
   debug: true
 })
 const cssPath = path.join(__dirname, '..', 'dist', 'css', 'all.min.css')
@@ -24,7 +24,10 @@ function readFile () {
 }
 
 function uploadCss (css) {
-  bot.edit('MediaWiki:Test.css', css, 'update CSS', null, function () {
-    // console.log(arguments)
+  bot.edit('MediaWiki:Test.css', css, 'update CSS', '1', function (err, data) {
+    if (err) { console.log(err) }
+    else {
+      console.log(data)
+    }
   })
 }

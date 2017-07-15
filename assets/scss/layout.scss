@@ -1,0 +1,73 @@
+@import '_mixins';
+@import '_colors';
+
+.full-width {
+  width: 100% !important;
+}
+
+.wiki-container {
+  @include wiki-container();
+  margin: 20px 5px;
+
+  @each $element, $data in $colors {
+    &.#{$element} { box-shadow: 0 0 5px map-get($data, border); }
+  }
+
+  .article-table {
+    background: initial;
+    margin: 0;
+    border: 0;
+  }
+
+  .wiki-container-header {
+    @include border-radius-corner(top, left, 3px);
+    @include border-radius-corner(top, right, 3px);
+    padding: 3px 3px 3px 12px;
+  }
+  @each $element, $data in $colors {
+    .wiki-container-header.#{$element} { background: map-get(map-get($data, background), strong) }
+  }
+
+  .wiki-container-content {
+    padding: 6px 12px;
+    border: 0;
+  }
+}
+
+@each $element, $element-data in $colors {
+  @each $property, $color-or-map in $element-data {
+    @if $property == "border" {
+      @for $i from 1 through 5 {
+        .#{$element}-border-#{$i}px {
+          border: $color-or-map #{$i}px solid !important;
+        }
+        @each $side in $sides {
+          .#{$element}-border-#{$i}px-#{$side} {
+            border-#{$side}: $color-or-map #{$i}px solid !important;
+          }
+        }
+      }
+    } @else { // $property == "background"
+      @each $force, $color in $color-or-map {
+        .#{$element}-background-#{$force} {
+          background-color: $color !important;
+        }
+      }
+    }
+  }
+}
+
+$properties: margin padding;
+$sizes: 0 5px 10px 15px 20px 25px;
+@each $property in $properties {
+  @each $size in $sizes {
+    .#{$property}-#{$size} {
+      margin: $size !important;
+    }
+    @each $side in $sides {
+      .#{$property}-#{$side}-#{$size} {
+        #{$property}-#{$side}: $size !important;
+      }
+    }
+  }
+}

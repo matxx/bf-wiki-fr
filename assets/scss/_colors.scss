@@ -1,0 +1,58 @@
+$colors: (
+  fire: (
+    background: (
+      gentle: #FBEFEF,
+      medium: #FFE3E3,
+      strong: #F6CECE,
+    ),
+    border: #FE2E2E,
+  ),
+  water: (
+    background: (
+      gentle: #EFFBFB,
+      medium: #D3F3FF,
+      strong: #A9D0F5,
+    ),
+    border: #2E2EFE,
+  ),
+  earth: (
+    background: (
+      gentle: #EEFBEF,
+      medium: #E3FFE3,
+      strong: #A9F5A9,
+    ),
+    border: #04B404,
+  ),
+  thunder: (
+    background: (
+      gentle: #FBFBEF,
+      medium: #FFFFB3,
+      strong: #F3F781,
+    ),
+    border: #D7DF01,
+  ),
+  light: (
+    background: (
+      gentle: #FFFFFF,
+      medium: #F8F8F8,
+      strong: #F2F2F2,
+    ),
+    border: #A4A4A4,
+  ),
+  dark: (
+    background: (
+      gentle: #F8EFFB,
+      medium: #E5CCFF,
+      strong: #D0A9F5,
+    ),
+    border: #6A0888,
+  ),
+  unknown: (
+    background: (
+      gentle: #FAFAFA,
+      medium: #F0F0F0,
+      strong: #DDDDDD,
+    ),
+    border: #000000,
+  ),
+);

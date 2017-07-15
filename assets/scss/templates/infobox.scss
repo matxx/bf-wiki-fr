@@ -1,0 +1,26 @@
+@import '../_mixins';
+@import '../_colors';
+
+.portable-infobox {
+  @include wiki-container();
+  background-color: white;
+  margin-right: 5px;
+
+  .pi-title, .pi-header {
+    text-shadow: 0 0 4px gray;
+  }
+
+  .article-table {
+    background: initial;
+
+    td {
+      border: 0;
+    }
+  }
+}
+
+@each $element, $data in $colors {
+  .portable-infobox.pi-theme-#{$element} { box-shadow: 0 0 5px map-get($data, border); background-color: map-get(map-get($data, background), gentle) }
+  .pi-theme-#{$element} .pi-title, .pi-theme-#{$element} .pi-header { background-color: map-get(map-get($data, background), strong) }
+  .pi-theme-#{$element} .pi-horizontal-group-item:nth-child(2n)     { background-color: map-get(map-get($data, background), medium) }
+}

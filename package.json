@@ -4,12 +4,11 @@
   "description": "Assets for the french BF RPG wiki",
   "url": "http://fr.bravefrontierrpg.wikia.com",
   "scripts": {
-    "build:css": "node-sass -r assets/scss -o dist/css",
-    "clean": "rimraf dist",
-    "minify:css": "minify --template '{{filename}}.min.css' dist/css/*.css",
-    "package:css": "minify --output 'dist/css/all.min.css' dist/css/*.min.css",
+    "build:css": "gulp build:css",
+    "clean": "gulp clean",
+    "minify:css": "gulp minify:css",
     "upload:css": "node tasks/bot.js",
-    "watch:css": "nodemon -e scss -x 'npm run clean && npm run build:css && npm run minify:css && npm run package:css && npm run upload:css'"
+    "watch:css": "nodemon -e scss -x 'npm run clean && npm run build:css && npm run minify:css && npm run upload:css'"
   },
   "repository": {
     "type": "git",
@@ -17,10 +16,13 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "minifier": "^0.8.1",
-    "node-sass": "^4.5.3",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
     "nodemon": "^1.11.0",
-    "nodemw": "^0.10.1",
-    "rimraf": "^2.6.1"
+    "nodemw": "^0.10.1"
   }
 }

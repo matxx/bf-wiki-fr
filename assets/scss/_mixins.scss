@@ -1,0 +1,47 @@
+$sides: top bottom left right;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin border-radius-corner($side-v, $side-h, $radius) {
+  -webkit-border-#{$side-v}-#{$side-h}-radius: $radius;
+     -moz-border-#{$side-v}-#{$side-h}-radius: $radius;
+      -ms-border-#{$side-v}-#{$side-h}-radius: $radius;
+          border-#{$side-v}-#{$side-h}-radius: $radius;
+}
+
+@mixin width-calc($left, $right) {
+  width: -webkit-calc(#{$left} - #{$right});
+  width: -moz-calc(#{$left} - #{$right});
+  width: -o-calc(#{$left} - #{$right});
+  width: calc(#{$left} - #{$right});
+}
+
+@mixin add-styles($items) {
+  @each $item in $items {
+    @if type_of($item) == "list" {
+      @if nth($item, 1) == "border-radius" {
+        @include border-radius(nth($item, 2), nth($item, 3), nth($item, 3));
+      }
+    } @else {
+      @extend %#{$item};
+    }
+  }
+}
+// usage :
+// .footer, .header, .login-box {
+//   @include add-styles((
+//     margin-reset,
+//     padding-reset,
+//     size-reset,
+//     (border-solid, 3px, #F90)
+//   ));
+// }
+
+@mixin wiki-container() {
+  padding: 2px;
+  @include border-radius(4px);
+}

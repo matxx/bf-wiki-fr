@@ -1,0 +1,15 @@
+@import '../_mixins';
+
+.item-container-left {
+  display: inline-block;
+  @include width-calc(100%, 430px)
+}
+.item-page {
+  .portable-infobox {
+    width: 400px !important;
+
+    .pi-image {
+      display: none;
+    }
+  }
+}
