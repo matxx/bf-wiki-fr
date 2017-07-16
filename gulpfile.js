@@ -66,7 +66,7 @@ function logAndExecute(callback, caller) {
 }
 
 gulp.task('upload:css', function() {
-  uploadToWiki('MediaWiki:Dev.css', 'changed.min.css')
+  uploadToWiki('MediaWiki:Dev.css', 'changed.css')
 })
 
 gulp.task('deploy:css', function() {
