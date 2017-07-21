@@ -9,7 +9,9 @@
     "minify:css": "gulp minify:css",
     "upload:css": "gulp upload:css",
     "deploy:css": "gulp clean && gulp build:css && gulp minify:css && gulp deploy:css",
-    "watch:css": "nodemon -e scss -x 'npm run clean && npm run build:css && npm run upload:css'"
+    "watch:css": "nodemon -e scss -x 'npm run clean && npm run build:css && npm run upload:css'",
+    "watch":  "npm run watch:css",
+    "deploy": "npm run deploy:css"
   },
   "repository": {
     "type": "git",
