@@ -2,10 +2,10 @@ const gulp = require('gulp')
 const del = require('del')
 const concat = require('gulp-concat')
 const rename = require('gulp-rename')
-const sass = require('gulp-sass');
-const minifyCSS = require('gulp-minify-css');
+const sass = require('gulp-sass')
+const minifyCSS = require('gulp-minify-css')
 const path = require('path')
-const gulpGitStatus = require('gulp-git-status');
+const gulpGitStatus = require('gulp-git-status')
 
 const header_start = '/*****************************************************************/\n' +
                      '/*                   all CSS is managed via SCSS                 */\n' +
@@ -71,7 +71,7 @@ gulp.task('upload:css', function() {
 })
 
 gulp.task('deploy:css', function() {
-  uploadToWiki('MediaWiki:Common.css', 'all.min.css', true)
+  uploadToWiki('MediaWiki:Common.css', 'all.css', true)
 })
 
 function uploadToWiki(page, file, with_header) {

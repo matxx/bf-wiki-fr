@@ -7,3 +7,8 @@
 
 .item-page .portable-infobox {
   width: 400px !important; }
+  .item-page .portable-infobox .pi-data-value:not(:first-child) {
+    -ms-flex-preferred-size: 280px;
+    -webkit-flex-basis: 280px;
+    -moz-flex-basis: 280px;
+    flex-basis: 280px; }

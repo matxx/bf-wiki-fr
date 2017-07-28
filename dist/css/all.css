@@ -26,7 +26,7 @@ a[href$="/wiki/Spécial:Contributions/Fyes"] {
 a[href$="/wiki/Utilisateur:AlphaMoon"],
 a[href$="/wiki/Mur:AlphaMoon"],
 a[href$="/wiki/Spécial:Contributions/AlphaMoon"] {
-  color: #8A0868 !important;
+  color: #CC29A7 !important;
   font-weight: bold !important;
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif !important; }
 
@@ -1292,6 +1292,11 @@ a[href$="/wiki/Spécial:Contributions/AlphaMoon"] {
 
 .item-page .portable-infobox {
   width: 400px !important; }
+  .item-page .portable-infobox .pi-data-value:not(:first-child) {
+    -ms-flex-preferred-size: 280px;
+    -webkit-flex-basis: 280px;
+    -moz-flex-basis: 280px;
+    flex-basis: 280px; }
 
 .list-with-icons li {
   position: relative; }
