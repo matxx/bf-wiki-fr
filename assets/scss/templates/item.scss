@@ -2,21 +2,5 @@
 
 .item-container-left {
   display: inline-block;
-  @include width-calc(100%, 430px)
-}
-.item-page {
-  .portable-infobox {
-    width: 400px !important;
-
-    // .pi-image {
-    //   display: none;
-    // }
-
-    .pi-data-value:not(:first-child) {
-      -ms-flex-preferred-size: 280px;
-      -webkit-flex-basis: 280px;
-      -moz-flex-basis: 280px;
-      flex-basis: 280px;
-    }
-  }
+  @include width-calc(100%, 330px)
 }

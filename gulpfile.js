@@ -7,19 +7,19 @@ const minifyCSS = require('gulp-minify-css')
 const path = require('path')
 const gulpGitStatus = require('gulp-git-status')
 
-const header_start = '/*****************************************************************/\n' +
-                     '/*                   all CSS is managed via SCSS                 */\n' +
-                     '/*    take a look there : https://github.com/matxx/bf-wiki-fr    */\n' +
-                     '/*****************************************************************/\n' +
-                     '/* all developments in progress are dumped into this file        */\n' +
-                     '@import url("/MediaWiki:Dev.css?ctype=text/css&action=raw");\n' +
-                     '/* and here are all the styles in "production"                   */\n'
+const header_start = '' +
+  '/*****************************************************************/\n' +
+  '/*                   all CSS is managed via SCSS                 */\n' +
+  '/*    take a look there : https://github.com/matxx/bf-wiki-fr    */\n' +
+  '/*****************************************************************/\n' +
+  "/* if you wanna C/C some CSS, you'll find your happiness there : */\n" +
+  '/* https://github.com/matxx/bf-wiki-fr/tree/master/dist/css      */\n' +
+  '/*****************************************************************/\n' +
+  '/* all developments in progress are dumped into this file        */\n' +
+  '@import url("/MediaWiki:Dev.css?ctype=text/css&action=raw");\n' +
+  '/* and here are all the styles in "production"                   */\n'
 
-const header_end = '/*****************************************************************/\n' +
-                   "/* if you wanna C/C some CSS, you'll find your happiness there : */\n" +
-                   '/* https://github.com/matxx/bf-wiki-fr/tree/master/dist/css      */\n' +
-                   '/*****************************************************************/\n'
-
+const header_end = '/*****************************************************************/\n'
 
 gulp.task('clean', function() {
   return del(['dist'])
