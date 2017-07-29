@@ -54,7 +54,7 @@ const fs = require('fs')
 function logAndExecute(callback, caller) {
   return function (err, data) {
     if (err) {
-      if (err.code === 'ENOENT' && caller === 'uploadToWiki') {
+      if (err.code === 'ENOENT' && caller === 'readFile') {
         callback('')
       } else {
         console.log(err)
@@ -86,7 +86,7 @@ function uploadToWiki(page, file, with_header) {
   bot.logIn(process.env.WIKI_BOT_USERNAME, process.env.WIKI_BOT_PASSWORD, logAndExecute(readFile, 'uploadToWiki'))
 
   function readFile() {
-    fs.readFile(cssPath, logAndExecute(uploadCss))
+    fs.readFile(cssPath, logAndExecute(uploadCss, 'readFile'))
   }
 
   function uploadCss(css) {
