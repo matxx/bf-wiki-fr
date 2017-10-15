@@ -25,7 +25,6 @@ $icon-size: 20px;
 }
 .list-with-icons.list-without-text {
   display: inline;
-  float: right;
   margin: 0;
 }
 .list-with-icons.list-without-text li {
@@ -86,7 +85,7 @@ $battle_buff_icons: (
   (shield-fire,           shield-water,         shield-earth,             shield-thunder,   shield-light,           shield-dark,              ailments-atk-up,          spark-bb-fill,          guard-1,                guard-2,                    guard-3,                  bb-gauge-down,            spark-atk-up,           spark-def-up,             spark-rec-up              ),
   (spark-crit-up,         resist-atk-down,      resist-def-down,          resist-rec-down,  self-atk-up,            self-def-up,              self-rec-up,              spark-crit,             od-gauge-up,            regen-dmg,                  drain-hp,                 spark-regen,              convert-atk,            convert-def,              convert-rec               ),
   (self-crit,             self-spark,           self-regen,               self-bb,          self-convert-atk,       self-convert-def,         self-convert-rec,         reduc-crit,             reduc-weak,             reduc-spark,                normal-atk-aoe,           cancel-sphere,            cancel-es),
-  (resist-dot),
+  (resist-dot,            target,               atk-down-return,          def-down-return,  rec-down-return,        crit-weakness,            elements-weakness),
 );
 
 @for $i from 1 through length($battle_buff_icons) {
