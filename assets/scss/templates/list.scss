@@ -42,22 +42,6 @@ $icon-size: 20px;
   top: -2px;
 }
 
-@mixin icon-pos($row, $col) {
-  background-position: (-(($col - 1) * $icon-size)) (-(($row - 1) * $icon-size));
-}
-@mixin battle_bad_icons() {
-  background-image: url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/6/6e/Battle_bad_icon.png/revision/latest?cb=20170713013337&path-prefix=fr");
-  background-size: 600% 100%;
-}
-@mixin battle_buff_icons_eu() {
-  background-image: url("//vignette1.wikia.nocookie.net/bravefrontierrpg/images/3/3d/Battle_buff_icon_eu.png/revision/latest?cb=20170713013422&path-prefix=fr");
-  background-size: 1500% 600%;
-}
-@mixin battle_buff_icons_sg() {
-  background-image: url("//vignette1.wikia.nocookie.net/bravefrontierrpg/images/4/41/Battle_buff_icon_sg.png/revision/latest?cb=20170713013450&path-prefix=fr");
-  background-size: 1500% 600%;
-}
-
 /* Icon toggling unit thum/full on unit page */
 .list-with-icons li.swords::before {
   background-image: url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/0/05/Film.png/revision/latest?cb=20141002102919&path-prefix=fr");
@@ -75,6 +59,22 @@ $icon-size: 20px;
 .list-with-icons li.random::before {
   background-image: url("//vignette4.wikia.nocookie.net/bravefrontierrpg/images/b/b5/Icone_al%C3%A9atoire.png/revision/latest/scale-to-width-down/17?cb=20150531212402&path-prefix=fr");
   background-size: 100% 100%;
+}
+
+@mixin icon-pos($row, $col) {
+  background-position: (-(($col - 1) * $icon-size)) (-(($row - 1) * $icon-size));
+}
+@mixin battle_bad_icons() {
+  background-image: url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/6/6e/Battle_bad_icon.png/revision/latest?cb=20170713013337&path-prefix=fr");
+  background-size: 600% 100%;
+}
+@mixin battle_buff_icons_eu() {
+  background-image: url("//vignette1.wikia.nocookie.net/bravefrontierrpg/images/3/3d/Battle_buff_icon_eu.png/revision/latest?cb=20170713013422&path-prefix=fr");
+  background-size: 1500% 600%;
+}
+@mixin battle_buff_icons_sg() {
+  background-image: url("//vignette1.wikia.nocookie.net/bravefrontierrpg/images/4/41/Battle_buff_icon_sg.png/revision/latest?cb=20170713013450&path-prefix=fr");
+  background-size: 1500% 600%;
 }
 
 $battle_buff_icons: (
