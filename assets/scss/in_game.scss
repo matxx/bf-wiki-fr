@@ -12,12 +12,24 @@
                 url("//vignette2.wikia.nocookie.net/bravefrontierrpg/images/8/86/Sys_win_corner_rt.png/revision/latest?cb=20161126111356&path-prefix=fr"),
                 url("//vignette2.wikia.nocookie.net/bravefrontierrpg/images/2/28/Sys_win_corner_rb.png/revision/latest?cb=20161126111346&path-prefix=fr"),
                 url("//vignette4.wikia.nocookie.net/bravefrontierrpg/images/e/e2/Sys_win_base.png/revision/latest?cb=20161126114500&path-prefix=fr");
-    background-position: left, right, top, bottom,
-    top left, bottom left, top right, bottom right,
-    center;
-    background-size: 18px calc(100% - 36px), 18px calc(100% - 36px), calc(100% - 36px) 18px, calc(100% - 36px) 18px,
-    18px, 18px, 18px, 18px,
-    calc(100% - 18px) calc(100% - 18px);
+    background-position: left,
+                         right,
+                         top,
+                         bottom,
+                         top left,
+                         bottom left,
+                         top right,
+                         bottom right,
+                         center;
+    background-size: 18px calc(100% - 36px),
+                     18px calc(100% - 36px),
+                     calc(100% - 36px) 18px,
+                     calc(100% - 36px) 18px,
+                     18px,
+                     18px,
+                     18px,
+                     18px,
+                     calc(100% - 18px) calc(100% - 18px);
     background-repeat: no-repeat;
 }
 .sys-popup::before {

@@ -26,6 +26,8 @@
   display: inline;
   padding: 0px 10px;
   margin-right: 5px; }
+  .list-with-icons.list-without-text li:last-child {
+    margin-right: 0px; }
 
 .list-with-icons.list-without-text li:before {
   left: 0px;

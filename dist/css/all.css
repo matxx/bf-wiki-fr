@@ -1250,6 +1250,8 @@ a[href$="/wiki/Spécial:Contributions/TwisteR_Bl4cK"] {
   display: inline;
   padding: 0px 10px;
   margin-right: 5px; }
+  .list-with-icons.list-without-text li:last-child {
+    margin-right: 0px; }
 
 .list-with-icons.list-without-text li:before {
   left: 0px;
@@ -2114,6 +2116,14 @@ a[href$="/wiki/Spécial:Contributions/TwisteR_Bl4cK"] {
   color: white; }
   .tooltip-unit-skill-desc.tooltip-unit-skill-desc-top {
     top: 24px; }
+
+.tooltip-unit-skill-desc-buffs {
+  float: right;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 240px; }
+  .tooltip-unit-skill-desc-buffs.tooltip-unit-skill-desc-buffs-short {
+    max-width: 175px; }
 
 .tooltip-unit-skill-gauge {
   position: absolute;

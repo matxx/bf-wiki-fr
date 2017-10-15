@@ -31,7 +31,11 @@ $icon-size: 20px;
   list-style: none;
   display: inline;
   padding: 0px 10px;
+
   margin-right: 5px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 .list-with-icons.list-without-text li:before {
   left: 0px;

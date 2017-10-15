@@ -157,6 +157,14 @@
   .tooltip-unit-skill-desc.tooltip-unit-skill-desc-top {
     top: 24px; }
 
+.tooltip-unit-skill-desc-buffs {
+  float: right;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 240px; }
+  .tooltip-unit-skill-desc-buffs.tooltip-unit-skill-desc-buffs-short {
+    max-width: 175px; }
+
 .tooltip-unit-skill-gauge {
   position: absolute;
   top: -2px;
