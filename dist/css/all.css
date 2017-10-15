@@ -1771,54 +1771,54 @@ a[href$="/wiki/Spécial:Contributions/TwisteR_Bl4cK"] {
   background-position: -120px -220px; }
 
 .list-with-icons li.ailments-poison::before {
+  background-position: 0px 0px;
   background-image: url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/6/6e/Battle_bad_icon.png/revision/latest?cb=20170713013337&path-prefix=fr");
-  background-size: 600% 100%;
-  background-position: 0px 0px; }
+  background-size: 600% 100%; }
 
 .list-with-icons li.ailments-weakness::before {
+  background-position: -20px 0px;
   background-image: url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/6/6e/Battle_bad_icon.png/revision/latest?cb=20170713013337&path-prefix=fr");
-  background-size: 600% 100%;
-  background-position: -20px 0px; }
+  background-size: 600% 100%; }
 
 .list-with-icons li.ailments-sickness::before {
+  background-position: -40px 0px;
   background-image: url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/6/6e/Battle_bad_icon.png/revision/latest?cb=20170713013337&path-prefix=fr");
-  background-size: 600% 100%;
-  background-position: -40px 0px; }
+  background-size: 600% 100%; }
 
 .list-with-icons li.ailments-injury::before {
+  background-position: -60px 0px;
   background-image: url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/6/6e/Battle_bad_icon.png/revision/latest?cb=20170713013337&path-prefix=fr");
-  background-size: 600% 100%;
-  background-position: -60px 0px; }
+  background-size: 600% 100%; }
 
 .list-with-icons li.ailments-curse::before {
+  background-position: -80px 0px;
   background-image: url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/6/6e/Battle_bad_icon.png/revision/latest?cb=20170713013337&path-prefix=fr");
-  background-size: 600% 100%;
-  background-position: -80px 0px; }
+  background-size: 600% 100%; }
 
 .list-with-icons li.ailments-paralysis::before {
+  background-position: -100px 0px;
   background-image: url("//vignette3.wikia.nocookie.net/bravefrontierrpg/images/6/6e/Battle_bad_icon.png/revision/latest?cb=20170713013337&path-prefix=fr");
-  background-size: 600% 100%;
-  background-position: -100px 0px; }
+  background-size: 600% 100%; }
 
 .list-with-icons li.eu-double-atk::before {
+  background-position: 0px 0px;
   background-image: url("//vignette1.wikia.nocookie.net/bravefrontierrpg/images/3/3d/Battle_buff_icon_eu.png/revision/latest?cb=20170713013422&path-prefix=fr");
-  background-size: 1500% 600%;
-  background-position: 0px 0px; }
+  background-size: 1500% 600%; }
 
 .list-with-icons li.eu-double-bb::before {
+  background-position: -20px 0px;
   background-image: url("//vignette1.wikia.nocookie.net/bravefrontierrpg/images/3/3d/Battle_buff_icon_eu.png/revision/latest?cb=20170713013422&path-prefix=fr");
-  background-size: 1500% 600%;
-  background-position: -20px 0px; }
+  background-size: 1500% 600%; }
 
 .list-with-icons li.eu-shield-rec::before {
+  background-position: -40px 0px;
   background-image: url("//vignette1.wikia.nocookie.net/bravefrontierrpg/images/3/3d/Battle_buff_icon_eu.png/revision/latest?cb=20170713013422&path-prefix=fr");
-  background-size: 1500% 600%;
-  background-position: -40px 0px; }
+  background-size: 1500% 600%; }
 
 .list-with-icons li.sg-stealth::before {
+  background-position: -260px 0px;
   background-image: url("//vignette1.wikia.nocookie.net/bravefrontierrpg/images/4/41/Battle_buff_icon_sg.png/revision/latest?cb=20170713013450&path-prefix=fr");
-  background-size: 1500% 600%;
-  background-position: -260px 0; }
+  background-size: 1500% 600%; }
 
 @charset "UTF-8";
 .unit-statup {
@@ -1941,6 +1941,35 @@ a[href$="/wiki/Spécial:Contributions/TwisteR_Bl4cK"] {
   text-shadow: 0 0 3px #000, 0 0 3px #000, 0 0 3px #000;
   top: 70px !important;
   font-size: 20px !important; }
+
+.header-multiplier {
+  font-weight: 700;
+  color: #FED83C;
+  text-shadow: -1px 0 1px black,0 1px 1px black,1px 0 1px black,0 -1px 1px black; }
+
+.header-multiplier::before {
+  padding: 4px 10px;
+  margin: 0 4px;
+  background-image: url("//vignette4.wikia.nocookie.net/bravefrontierrpg/images/1/19/Quest_multiplier_arrow_left.png/revision/latest?cb=20170705183901&path-prefix=fr");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+  content: "\200B"; }
+
+.header-multiplier::after {
+  padding: 4px 10px;
+  margin: 0 4px;
+  background-image: url("//vignette2.wikia.nocookie.net/bravefrontierrpg/images/e/e7/Quest_multiplier_arrow_right.png/revision/latest?cb=20170705183913&path-prefix=fr");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+  content: "\200B"; }
+
+.header-multiplier-left {
+  float: left; }
+
+.header-multiplier-right {
+  float: right; }
 
 .advanced-tooltip .tooltip-contents {
   display: none; }
@@ -2285,32 +2314,3 @@ a[href$="/wiki/Spécial:Contributions/TwisteR_Bl4cK"] {
     margin-left: 0; }
   100% {
     margin-left: -50%; } }
-
-.header-multiplier {
-  font-weight: 700;
-  color: #FED83C;
-  text-shadow: -1px 0 1px black,0 1px 1px black,1px 0 1px black,0 -1px 1px black; }
-
-.header-multiplier::before {
-  padding: 4px 10px;
-  margin: 0 4px;
-  background-image: url("//vignette4.wikia.nocookie.net/bravefrontierrpg/images/1/19/Quest_multiplier_arrow_left.png/revision/latest?cb=20170705183901&path-prefix=fr");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100% auto;
-  content: "\200B"; }
-
-.header-multiplier::after {
-  padding: 4px 10px;
-  margin: 0 4px;
-  background-image: url("//vignette2.wikia.nocookie.net/bravefrontierrpg/images/e/e7/Quest_multiplier_arrow_right.png/revision/latest?cb=20170705183913&path-prefix=fr");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100% auto;
-  content: "\200B"; }
-
-.header-multiplier-left {
-  float: left; }
-
-.header-multiplier-right {
-  float: right; }
