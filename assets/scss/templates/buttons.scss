@@ -1,0 +1,11 @@
+.button-wrapper {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.button-wrapper__collapsible {
+  position:absolute;
+  width: 100%;
+  z-index:10000;
+}
