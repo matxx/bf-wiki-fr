@@ -1,5 +1,5 @@
-@import '../_mixins';
-@import '../_colors';
+@import '../../_mixins';
+@import '../../_colors';
 
 .portable-infobox {
   @include wiki-container();
