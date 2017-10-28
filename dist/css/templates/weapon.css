@@ -1,0 +1,6 @@
+.weapon-container-left {
+  display: inline-block;
+  width: -webkit-calc(100% - 330px);
+  width: -moz-calc(100% - 330px);
+  width: -o-calc(100% - 330px);
+  width: calc(100% - 330px); }

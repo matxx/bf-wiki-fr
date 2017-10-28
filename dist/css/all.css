@@ -1847,6 +1847,13 @@ a[href$="/wiki/Spécial:Contributions/TwisteR_Bl4cK"] {
   height: 8px;
   line-height: 0; }
 
+.weapon-container-left {
+  display: inline-block;
+  width: -webkit-calc(100% - 330px);
+  width: -moz-calc(100% - 330px);
+  width: -o-calc(100% - 330px);
+  width: calc(100% - 330px); }
+
 .portable-infobox {
   padding: 2px;
   -webkit-border-radius: 4px;
@@ -1941,6 +1948,12 @@ a[href$="/wiki/Spécial:Contributions/TwisteR_Bl4cK"] {
   text-shadow: 0 0 3px #000, 0 0 3px #000, 0 0 3px #000;
   top: 70px !important;
   font-size: 20px !important; }
+
+.weapon-infobox .portable-infobox thead .pi-horizontal-group-item {
+  padding: 10px 10px 6px; }
+
+.weapon-infobox .portable-infobox tbody .pi-horizontal-group-item {
+  padding: 10px 12px; }
 
 .header-multiplier {
   font-weight: 700;

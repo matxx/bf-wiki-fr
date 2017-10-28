@@ -1,0 +1,6 @@
+@import '../_mixins';
+
+.weapon-container-left {
+  display: inline-block;
+  @include width-calc(100%, 330px)
+}
