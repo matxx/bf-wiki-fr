@@ -5,7 +5,7 @@
   "url": "http://fr.bravefrontierrpg.wikia.com",
   "scripts": {
     "clean": "gulp clean",
-    "dev":  "npm run watch:css",
+    "dev": "npm run watch:css",
     "build:css": "gulp build:css",
     "minify:css": "gulp minify:css",
     "upload:css": "gulp upload:css",
