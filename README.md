@@ -22,6 +22,14 @@ When using `npm run dev`, all your recent changes (modified files in git status)
 
 Just hit `npm run deploy` and all your SCSS will be compiled, minified and pushed to MediaWiki:Common.css
 
+## crontab -e
+
+```
+05 02 * * * curl --data "action=purge" "http://fr.bravefrontierrpg.wikia.com/wiki/\%C3\%89v\%C3\%A9nements_journaliers";
+05 16 * * * curl --data "action=purge" "http://fr.bravefrontierrpg.wikia.com/wiki/Template\%3ARateUp";
+05 16 * * * curl --data "action=purge" "http://fr.bravefrontierrpg.wikia.com/wiki/Template\%3ARateUp\%2FCurrentEvent";
+```
+
 ## Customize
 
 You can copy and tweak my code to work for you.
