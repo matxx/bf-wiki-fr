@@ -1854,6 +1854,9 @@ a[href$="/wiki/Spécial:Contributions/TwisteR_Bl4cK"] {
   width: -o-calc(100% - 330px);
   width: calc(100% - 330px); }
 
+.weapon-levels {
+  line-height: 20px; }
+
 .portable-infobox {
   padding: 2px;
   -webkit-border-radius: 4px;

@@ -4,3 +4,7 @@
   display: inline-block;
   @include width-calc(100%, 330px)
 }
+
+.weapon-levels {
+  line-height: 20px;
+}

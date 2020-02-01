@@ -4,3 +4,6 @@
   width: -moz-calc(100% - 330px);
   width: -o-calc(100% - 330px);
   width: calc(100% - 330px); }
+
+.weapon-levels {
+  line-height: 20px; }
